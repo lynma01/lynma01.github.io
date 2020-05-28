@@ -1,4 +1,4 @@
-## Welcome to Matthew Lyn's GitHub.io
+## Welcome to Matthew Lyn's github.io
 
 I use this website as a central website for my projects and writing.
 
