@@ -1,5 +1,6 @@
 ---
 title: "Home"
+description: Hi, I'm Matt- an analytics & RPA consultant working in Healthcare and Emergency Management. 
 listing:
   contents: posts
   sort: "date desc"
