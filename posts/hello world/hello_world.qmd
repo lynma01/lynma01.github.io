@@ -1,0 +1,13 @@
+---
+title: "hello world!"
+description: The beginnings of something new
+date: 2022-11-11
+
+author:
+  - name: Matthew Lyn
+    url: https://lynma01.github.io
+
+date-format: short
+number-sections: true
+title-block-banner: true
+---
