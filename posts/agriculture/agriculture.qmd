@@ -1,0 +1,23 @@
+---
+title: agriculture
+description: pass
+date: 2022-11-11
+
+author:
+  - name: Matthew Lyn
+    url: https://lynma01.github.io
+
+date-format: short
+number-sections: true
+title-block-banner: true
+toc: true
+
+---
+
+TODO - create duckdb instance
+
+TODO - read data into pandas dataframes from data folder
+
+TODO - find common indeces and normalize data
+
+TODO - create visualizations
