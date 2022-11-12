@@ -1,0 +1,30 @@
+---
+title: "Climate change and the threat to civilization"
+description: pass
+date: 11/09/2022
+
+author:
+  - name: Matthew Lyn
+    url: https://www.github.io/lynma01
+
+format:
+  html:
+    code-fold: true
+    page-layout: full
+toc: true
+number-sections: true
+
+draft: true
+---
+
+## How do we measure civilization-collapse?
+1. How are current civilizations performing?
+2. If we were to create a model of civilization-collapse, what should be included?
+
+## There's local collapse, regional collapse, and civilizational collapse.
+
+In turn, the mechanisms by which these collapses occur are: 1) direct impacts, 2) socio-climate feedbacks, and 3) exogenous shock vulnerability.
+
+```{python}
+print(1 + 1)
+```
