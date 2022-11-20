@@ -8,3 +8,5 @@ posts/agriculture/data/historicalcpi.xlsx
 posts/agriculture/data/historicalppi.xlsx
 
 /.luarc.json
+
+.db
