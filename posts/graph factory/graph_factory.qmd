@@ -1,0 +1,44 @@
+---
+title: Graph Factory
+description: Conceptualizing Processes in Graph Databases
+date: 2022-11-11
+
+author:
+  - name: Matthew Lyn
+    url: https://lynma01.github.io
+
+title-block-banner: true
+date-format: short
+number-sections: true
+toc: true
+
+draft: true
+---
+
+# Summary:
+___
+Graph databases represent data in a "node - edge - node" format. This novel data format is normally used for social-network data. However, graph databases can be used for any kind of "network" analysis: work-flows, machine-processes, systems-models.
+
+In this article, I will demonstrate creating these three different examples and why composing these data-models in graph format yields important analytical benefits.
+
+
+# Graph databases
+___
+For this article, we're going to be using [CogDB](https://cogDB.io) as our graph database. CogDB is a python implementation of a graph database. Naturally, it's only intended for light-weight uses cases - so it's perfect for us as we articulate our ideas about systems and networks.
+
+```{python}
+from cog.torque import Graph
+g = Graph("people")
+g.put("alice" , "follows", "bob")
+g.put("bob", "follows", "alice")
+
+g.v().tag("from").out("follows").tag("to").view("follows").render()
+```
+Machine system:
+Every node is a production center. Every edge is a transportation-coordinate.
+    - What's produced? What's consumed? and in what quantities?
+
+Community system:
+Every node is a restaurant/school. Every edge is a social tie.
+
+Dataframe which serves as an event-log of node-production/consumption of resources.

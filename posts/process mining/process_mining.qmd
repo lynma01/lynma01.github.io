@@ -1,0 +1,28 @@
+---
+title: Process Mining 
+description: pass
+date: 2022-11-11
+
+author:
+  - name: Matthew Lyn
+    url: https://lynma01.github.io
+
+title-block-banner: true
+date-format: short
+number-sections: true
+toc: true
+
+draft: true
+---
+
+# Summary
+___
+Process Mining is an analytical field dedicated to extracting performance measurements from event logs. Key metrics are usually related to things like: "how quickly are we able to cycle through a given process?", or conversely, "where are the bottle-necks within our business-processes?".
+
+For this article, we're going to use [pm4py](https://pm4py.fit.fraunhofer.de) to analyze a randomly generated event-log and to generate a performance management report.
+
+[ProcesMining.org](http://www.processmining.org/story/production.html)
+
+[Wil van der Aalst](http://www.padsweb.rwth-aachen.de/wvdaalst/)
+
+[What Process Mining Is, and Why Companies Should Do It](https://hbr.org/2019/04/what-process-mining-is-and-why-companies-should-do-it)

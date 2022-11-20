@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/agriculture/agriculture.html",
       "/posts/hello world/hello_world.html"
     ]
   }
