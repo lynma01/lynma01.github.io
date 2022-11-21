@@ -1,17 +1,6 @@
 ---
 title: DIY Datalake - dithering around with dbt & duckdb
-description: Why pay for cloud-computing if you don't have to?
-date: 2022-11-11
-
-author:
-  - name: Matthew Lyn
-    url: https://lynma01.github.io
-
-date-format: short
-number-sections: true
-title-block-banner: true
-toc: true
-
+draft: true 
 ---
 
 DONE - create duckdb instance
@@ -33,10 +22,10 @@ cursor.execute("INSERT INTO my_table SELECT * FROM my_df")
 ```{python}
 cursor.execute("SELECT * FROM my_table").fetch_df()
 
-headers = df1.iloc[0]
-df1 = df1[1:]
-df1.columns = headers
-df1 = df1.loc[:, df1.columns.notna()]
+# headers = df1.iloc[0]
+# df1 = df1[1:]
+# df1.columns = headers
+# df1 = df1.loc[:, df1.columns.notna()]
 ```
 
 TODO - find common indeces and normalize data
