@@ -1,20 +1,5 @@
 ---
 title: "Climate change and the threat to civilization"
-description: pass
-date: 11/09/2022
-
-author:
-  - name: Matthew Lyn
-    url: https://www.github.io/lynma01
-
-format:
-  html:
-    code-fold: true
-    page-layout: full
-toc: true
-number-sections: true
-
-draft: true
 ---
 
 ## How do we measure civilization-collapse?

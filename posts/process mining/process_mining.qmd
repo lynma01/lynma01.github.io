@@ -1,15 +1,9 @@
 ---
 title: Process Mining in Space
-description: AKA how to benevolently run your space empire
-author: Matthew Lyn
-title-block-banner: true
-number-sections: true
-toc: true
 draft: true
 ---
 
 # Summary
-___
 [ProcesMining.org](http://www.processmining.org/story/production.html) is an analytical field dedicated to extracting performance measurements from event logs. Key metrics are usually related to things like: "how quickly is this workstation completing its jobs?", or conversely, "where are the bottle-necks within our business-processes?".
 
 Self-described as "applied data science", Process Mining is a concrete and self-evidently useful application of data-science to create business value. Pioneered by Dutch computer scientist [Wil van der Aalst](http://www.padsweb.rwth-aachen.de/wvdaalst/), the field is defined by an extremely tight focus industry problems rather than Operations Research style academic-publishing.

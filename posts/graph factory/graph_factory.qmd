@@ -1,29 +1,25 @@
 ---
-title: Graph Factory
-description: Conceptualizing Processes in Graph Databases
-date: 2022-11-11
-
-author:
-  - name: Matthew Lyn
-    url: https://lynma01.github.io
-
-title-block-banner: true
-date-format: short
-number-sections: true
-toc: true
-
+title: Managing Von Nueman Probes
 draft: true
 ---
 
 # Summary:
-___
+After FTX's crypto-crash, it's natural that VCs will rush to cover their portfolios in the same way young men clutch themselves after watching a comrade get hit square in the nads. Analysts, their MDs, and other investors will be critically analyzing the business cases for new and unproven technology.  
+
+While IoT isn't the most egregious offender when it comes nebulously defined business value (looking at you web-advertising), it's not immediately clear how the costs associated with adopting "cutting-edge" IoT technology are covered by the resulting increased revenue.
+
+To further complicate things; materials describing IoT use-cases fall into the same "hype-trap" that crypto does. IoT companies adorn themselves in claims of techno-omnisence and how anything-it-touches-becomes-gold. 
+
+In this article, we're going create data-models of different business scenarios to articulate examples of IoT's strengths, weaknesses, and opportunities.
+
+# IoT = [Robots, Data, Computers]:
+
 Graph databases represent data in a "node - edge - node" format. This novel data format is normally used for social-network data. However, graph databases can be used for any kind of "network" analysis: work-flows, machine-processes, systems-models.
 
 In this article, I will demonstrate creating these three different examples and why composing these data-models in graph format yields important analytical benefits.
 
 
 # Graph databases
-___
 For this article, we're going to be using [CogDB](https://cogDB.io) as our graph database. CogDB is a python implementation of a graph database. Naturally, it's only intended for light-weight uses cases - so it's perfect for us as we articulate our ideas about systems and networks.
 
 ```{python}

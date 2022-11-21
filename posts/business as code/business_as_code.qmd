@@ -1,28 +1,16 @@
 ---
 title: Business as Code
-description: pass
-date: 2022-11-11
-
-author:
-  - name: Matthew Lyn
-    url: https://lynma01.github.io
-
-title-block-banner: true
-date-format: short
-number-sections: true
-toc: true
-
 draft: true
 ---
 
 # Summary:
-___
 Every facet of a business can be respresented as data: finance, marketing, operations, and HR are all supported by Enterprise Resource Software whose primary purpose is organizing and storing that data. However, the transformtion of data into insight is only understood by a fraction of the working population (analytics engineers), and is also concerntrated among certain industries.
 
 Therefore, given those constratins, it's in the interest of every client and analytics professional to be as data-savvy as possible. Lest we risk the exorbitant costs of wasted work-hours and/or cloud-storage/computation.  
 
+There’s three types of business jobs: writing data, informing other people about the data, or building systems which process data.
+
 # This article is about:
-___
 1. How rigorous thinking, not familiarity with programming languages or tools, is what makes analytics projects and products *successful*.
   - But what makes business analytics *possible* and *manageable* is programming languages and tools. 
 2. Because analytics professionals are beholden to their client(s), they must be intimately familiar with their domain.
