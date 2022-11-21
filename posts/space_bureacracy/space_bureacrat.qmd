@@ -12,8 +12,8 @@ As is tradition, you're posted to hell-hole planets where if the fauna doesn't g
 
 # Problem Topics:
 Many of these problems will run the gammet of disciplines:
-    - Process Science & Operations Research
-    - Behavioral Economics
-    - Chemical Engineering
-    - Environmental Sciences
+- Process Science & Operations Research
+- Behavioral Economics
+- Chemical Engineering
+- Environmental Sciences
 
