@@ -1,0 +1,15 @@
+{
+  "hash": "0aeff9ee6fc5d7880f70dd4a28ba4f37",
+  "result": {
+    "markdown": "---\ntitle: DIY Datalake - dithering around with dbt & duckdb\ndraft: true \n---\n\nDONE - create duckdb instance\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nimport duckdb\nimport pandas as pd\nimport numpy as np\n\ncursor = duckdb.connect(database=':memory:')\n```\n:::\n\n\nTODO - read data into pandas dataframes from data folder\n\n::: {.cell execution_count=2}\n``` {.python .cell-code}\nmy_df = pd.DataFrame.from_dict({'a': [42]})\ncursor.execute(\"CREATE TABLE my_table AS SELECT * FROM my_df\")\ncursor.execute(\"INSERT INTO my_table SELECT * FROM my_df\")\n```\n\n::: {.cell-output .cell-output-display execution_count=2}\n```\n<duckdb.DuckDBPyConnection at 0x11c0a5670>\n```\n:::\n:::\n\n\n::: {.cell execution_count=3}\n``` {.python .cell-code}\ncursor.execute(\"SELECT * FROM my_table\").fetch_df()\n\n# headers = df1.iloc[0]\n# df1 = df1[1:]\n# df1.columns = headers\n# df1 = df1.loc[:, df1.columns.notna()]\n```\n\n::: {.cell-output .cell-output-display execution_count=3}\n```{=html}\n<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>a</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>42</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>42</td>\n    </tr>\n  </tbody>\n</table>\n</div>\n```\n:::\n:::\n\n\nTODO - find common indeces and normalize data\n\nTODO - create visualizations\n\n",
+    "supporting": [
+      "agriculture_files"
+    ],
+    "filters": [],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js\" integrity=\"sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\" integrity=\"sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==\" crossorigin=\"anonymous\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+      ]
+    }
+  }
+}

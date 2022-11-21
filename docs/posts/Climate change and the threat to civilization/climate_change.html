@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>lynma01 - Managing Von Nueman Probes</title>
+<title>lynma01 - Climate change and the threat to civilization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,9 +121,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -164,7 +161,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Managing Von Nueman Probes</h1>
+      <h1 class="title">Climate change and the threat to civilization</h1>
                       </div>
   </div>
     
@@ -187,127 +184,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="summary" class="level1">
-<h1>Summary:</h1>
-<p>After FTX’s crypto-crash, it’s natural that VCs will rush to cover their portfolios in the same way young men clutch themselves after watching a comrade get hit square in the nads. Analysts, their MDs, and other investors will be critically analyzing the business cases for new and unproven technology.</p>
-<p>While IoT isn’t the most egregious offender when it comes nebulously defined business value (looking at you web-advertising), it’s not immediately clear how the costs associated with adopting “cutting-edge” IoT technology are covered by the resulting increased revenue.</p>
-<p>To further complicate things; materials describing IoT use-cases fall into the same “hype-trap” that crypto does. IoT companies adorn themselves in claims of techno-omnisence and how anything-it-touches-becomes-gold.</p>
-<p>In this article, we’re going create data-models of different business scenarios to articulate examples of IoT’s strengths, weaknesses, and opportunities.</p>
+<section id="how-do-we-measure-civilization-collapse" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-measure-civilization-collapse">How do we measure civilization-collapse?</h2>
+<ol type="1">
+<li>How are current civilizations performing?</li>
+<li>If we were to create a model of civilization-collapse, what should be included?</li>
+</ol>
 </section>
-<section id="iot-robots-data-computers" class="level1">
-<h1>IoT = [Robots, Data, Computers]:</h1>
-<p>Graph databases represent data in a “node - edge - node” format. This novel data format is normally used for social-network data. However, graph databases can be used for any kind of “network” analysis: work-flows, machine-processes, systems-models.</p>
-<p>In this article, I will demonstrate creating these three different examples and why composing these data-models in graph format yields important analytical benefits.</p>
-</section>
-<section id="graph-databases" class="level1">
-<h1>Graph databases</h1>
-<p>For this article, we’re going to be using <a href="https://cogDB.io">CogDB</a> as our graph database. CogDB is a python implementation of a graph database. Naturally, it’s only intended for light-weight uses cases - so it’s perfect for us as we articulate our ideas about systems and networks.</p>
+<section id="theres-local-collapse-regional-collapse-and-civilizational-collapse." class="level2">
+<h2 class="anchored" data-anchor-id="theres-local-collapse-regional-collapse-and-civilizational-collapse.">There’s local collapse, regional collapse, and civilizational collapse.</h2>
+<p>In turn, the mechanisms by which these collapses occur are: 1) direct impacts, 2) socio-climate feedbacks, and 3) exogenous shock vulnerability.</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> cog.torque <span class="im">import</span> Graph</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> Graph(<span class="st">"people"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>g.put(<span class="st">"alice"</span> , <span class="st">"follows"</span>, <span class="st">"bob"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>g.put(<span class="st">"bob"</span>, <span class="st">"follows"</span>, <span class="st">"alice"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>g.v().tag(<span class="st">"from"</span>).out(<span class="st">"follows"</span>).tag(<span class="st">"to"</span>).view(<span class="st">"follows"</span>).render()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-  <iframe srcdoc="
-<!DOCTYPE html>
-<html lang=&quot;en&quot;>
-  <head>
-    <title>Cog Graph</title>
-    <style type=&quot;text/css&quot;>
-       body {
-        padding: 0;
-        margin: 0;
-        width: 100%;!important; 
-        height: 100%;!important; 
-      }
-
-      #cog-graph-view {
-        width: 700px;
-        height: 700px;
-      }
-    </style>
-
-
-    <script
-      type=&quot;text/javascript&quot;
-      src=&quot;https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js&quot;
-    ></script>
-  </head>  
- 
-  <body>
-    <div id=&quot;cog-graph-view&quot;></div>
-
-    <script type=&quot;text/javascript&quot;>
-
-    results =[{&quot;id&quot;: &quot;alice&quot;, &quot;from&quot;: &quot;bob&quot;, &quot;to&quot;: &quot;alice&quot;}, {&quot;id&quot;: &quot;bob&quot;, &quot;from&quot;: &quot;alice&quot;, &quot;to&quot;: &quot;bob&quot;}] 
-
-    var nodes = new vis.DataSet();
-    var edges = new vis.DataSet();
-    for (let i = 0; i < results.length; i++) {
-        res = results[i];
-        nodes.update({
-            id: res.from,
-            label: res.from
-        });
-        nodes.update({
-            id: res.to,
-            label: res.to
-        });
-        edges.update({
-            from: res.from,
-            to: res.to
-        });
-
-    }
-
-    var container = document.getElementById(&quot;cog-graph-view&quot;);
-    var data = {
-        nodes: nodes,
-        edges: edges,
-    };
-    var options = {
-        nodes: {
-            font: {
-                size: 20,
-                color: &quot;black&quot;
-            },
-            color: &quot;#46944f&quot;,
-            shape: &quot;dot&quot;,
-            widthConstraint: 200,
-
-        },
-        edges: {
-            font: &quot;12px arial #ff0000&quot;,
-            scaling: {
-                label: true,
-            },
-            shadow: true,
-            smooth: true,
-            arrows: { to: {enabled: true}}
-        },
-        physics: {
-            barnesHut: {
-                gravitationalConstant: -30000
-            },
-            stabilization: {
-                iterations: 1000
-            },
-        }
-
-    };
-    var network = new vis.Network(container, data, options);
-    </script>
-  </body>
-</html>
-
-" width="700" height="700"> </iframe> 
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>2</code></pre>
 </div>
 </div>
-<p>Machine system: Every node is a production center. Every edge is a transportation-coordinate. - What’s produced? What’s consumed? and in what quantities?</p>
-<p>Community system: Every node is a restaurant/school. Every edge is a social tie.</p>
-<p>Dataframe which serves as an event-log of node-production/consumption of resources.</p>
 
 
 </section>
