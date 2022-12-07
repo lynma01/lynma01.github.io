@@ -12,5 +12,5 @@ website:
 
 format:
   html:
-    theme: flatly
+    theme: darkly
     css: styles.css
