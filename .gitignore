@@ -12,3 +12,4 @@ posts/agriculture/data/historicalppi.xlsx
 .db
 _freeze/
 .duckdb
+posts/agriculture/data/agriculture.duckdb
