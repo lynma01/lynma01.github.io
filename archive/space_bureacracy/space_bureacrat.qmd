@@ -1,0 +1,42 @@
+---
+title: Space Bureacrat Series Planning 
+draft: true
+---
+# README
+This is a planning document for the Space Bureacrat series. It's going to outline all the different episodes/case-studies within the series. Might also be good to do some character/narrative arcs in here. Not really sure yet.
+
+# Synopsis:
+The year is 2140 and humanity is now doing its thing amongst the stars (fucking shit up). You're a young technocrat on the rise within the Department of Social Wellbeing & Economic Security (pronounced "Dee-Swiz"). 
+
+As is tradition, you're posted to hell-holes where if the place doesn't kill you, the people probably will. Your mission is to stay alive while cleaning-up messes, alleviating self-inflicted suffering, and finding the socially-optimum amount of inequallity for every government intervention.
+
+# Problem Topics:
+Many of these problems will borrow from many different disciplines:
+
+[//]: <> (TODO #1 change the topic visual into a mind-map)
+```{mermaid}
+flowchart LR
+    A[Process Science & Operations Research] --> B[Chemical Engineering]
+    A --> C[Logistics & Finance]
+
+    D[Statistics] --> A
+    D --> E[Behavioral Economics]
+
+    F[Organic Chemistry] --> G[Environmental Sciences]
+    F --> B
+```
+
+And the solution set will be somekind of script or artifact for problem solving or decision making.
+
+# Narrative
+___
+## Locations
+
+### Saturn's rings
+#### Why are we here?
+This is your first posting having left your corporate job at *New Madrid Wine-Bar and Fish Fry* and completed your 10 days of academy training.
+
+Because of your previous experience in quick-service restaurants, you're now supervising the food-distribution for Saturn's [C Ring](https://en.wikipedia.org/wiki/Rings_of_Saturn#Subdivisions_and_structures_within_the_rings) a 17,500km^2 orbital stretching from about 74,658 to 92,000km^2 from Saturn's center.
+
+There's quite a few orbital stations in the area as it's the largest source of ice for the inner solar system.
+

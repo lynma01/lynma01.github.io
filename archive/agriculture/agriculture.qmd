@@ -1,0 +1,33 @@
+---
+title: DIY Datalake - dithering around with dbt & duckdb
+draft: true 
+---
+
+DONE - create duckdb instance
+```{python}
+import duckdb
+import pandas as pd
+import numpy as np
+
+cursor = duckdb.connect(database=':memory:')
+```
+
+TODO - read data into pandas dataframes from data folder
+```{python}
+my_df = pd.DataFrame.from_dict({'a': [42]})
+cursor.execute("CREATE TABLE my_table AS SELECT * FROM my_df")
+cursor.execute("INSERT INTO my_table SELECT * FROM my_df")
+```
+
+```{python}
+cursor.execute("SELECT * FROM my_table").fetch_df()
+
+# headers = df1.iloc[0]
+# df1 = df1[1:]
+# df1.columns = headers
+# df1 = df1.loc[:, df1.columns.notna()]
+```
+
+TODO - find common indeces and normalize data
+
+TODO - create visualizations

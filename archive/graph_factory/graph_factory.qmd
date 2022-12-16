@@ -1,0 +1,40 @@
+---
+title: Managing Von Nueman Probes
+draft: true
+---
+
+# Summary:
+After FTX's crypto-crash, it's natural that VCs will rush to cover their portfolios in the same way young men clutch themselves after watching a comrade get hit square in the nads. Analysts, their MDs, and other investors will be critically analyzing the business cases for new and unproven technology.  
+
+While IoT isn't the most egregious offender when it comes nebulously defined business value (looking at you web-advertising), it's not immediately clear how the costs associated with adopting "cutting-edge" IoT technology are covered by the resulting increased revenue.
+
+To further complicate things; materials describing IoT use-cases fall into the same "hype-trap" that crypto does. IoT companies adorn themselves in claims of techno-omnisence and how anything-it-touches-becomes-gold. 
+
+In this article, we're going create data-models of different business scenarios to articulate examples of IoT's strengths, weaknesses, and opportunities.
+
+# IoT = [Robots, Data, Computers]:
+
+Graph databases represent data in a "node - edge - node" format. This novel data format is normally used for social-network data. However, graph databases can be used for any kind of "network" analysis: work-flows, machine-processes, systems-models.
+
+In this article, I will demonstrate creating these three different examples and why composing these data-models in graph format yields important analytical benefits.
+
+
+# Graph databases
+For this article, we're going to be using [CogDB](https://cogDB.io) as our graph database. CogDB is a python implementation of a graph database. Naturally, it's only intended for light-weight uses cases - so it's perfect for us as we articulate our ideas about systems and networks.
+
+```{python}
+from cog.torque import Graph
+g = Graph("people")
+g.put("alice" , "follows", "bob")
+g.put("bob", "follows", "alice")
+
+g.v().tag("from").out("follows").tag("to").view("follows").render()
+```
+Machine system:
+Every node is a production center. Every edge is a transportation-coordinate.
+    - What's produced? What's consumed? and in what quantities?
+
+Community system:
+Every node is a restaurant/school. Every edge is a social tie.
+
+Dataframe which serves as an event-log of node-production/consumption of resources.

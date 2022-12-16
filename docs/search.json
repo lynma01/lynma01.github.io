@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Climate change and the threat to civilization\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nhello world!\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+    "text": "Climate change and the threat to civilization\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nhello world!\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -26,5 +26,26 @@
     "title": "Climate change and the threat to civilization",
     "section": "There’s local collapse, regional collapse, and civilizational collapse.",
     "text": "There’s local collapse, regional collapse, and civilizational collapse.\nIn turn, the mechanisms by which these collapses occur are: 1) direct impacts, 2) socio-climate feedbacks, and 3) exogenous shock vulnerability.\n\nprint(1 + 1)\n\n2"
+  },
+  {
+    "objectID": "posts/climate_change_and_the_threat_to_civilization/climate_change.html",
+    "href": "posts/climate_change_and_the_threat_to_civilization/climate_change.html",
+    "title": "Climate change and the threat to civilization",
+    "section": "",
+    "text": "How are current civilizations performing?\nIf we were to create a model of civilization-collapse, what should be included?"
+  },
+  {
+    "objectID": "posts/climate_change_and_the_threat_to_civilization/climate_change.html#theres-local-collapse-regional-collapse-and-civilizational-collapse.",
+    "href": "posts/climate_change_and_the_threat_to_civilization/climate_change.html#theres-local-collapse-regional-collapse-and-civilizational-collapse.",
+    "title": "Climate change and the threat to civilization",
+    "section": "There’s local collapse, regional collapse, and civilizational collapse.",
+    "text": "There’s local collapse, regional collapse, and civilizational collapse.\nIn turn, the mechanisms by which these collapses occur are: 1) direct impacts, 2) socio-climate feedbacks, and 3) exogenous shock vulnerability.\n\nprint(1 + 1)\n\n2"
+  },
+  {
+    "objectID": "posts/process_mining/scratch_data.html",
+    "href": "posts/process_mining/scratch_data.html",
+    "title": "lynma01",
+    "section": "",
+    "text": "import faker\nimport pandas as pd\nimport numpy as np\n\n\ndf = pd.DataFrame(\n    {\"col1'\"}\n)"
   }
 ]

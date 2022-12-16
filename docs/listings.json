@@ -2,8 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/Climate change and the threat to civilization/climate_change.html",
-      "/posts/hello world/hello_world.html"
+      "/posts/climate_change_and_the_threat_to_civilization/climate_change.html",
+      "/posts/hello_world/hello_world.html",
+      "/posts/process_mining/scratch_data.html"
     ]
   }
 ]
