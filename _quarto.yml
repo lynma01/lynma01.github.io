@@ -1,11 +1,15 @@
 project:
   type: website
   output-dir: docs
+
   render:
     - "*.qmd" 
 
 website:
   title: "lynma01.github.io"
+  search:
+    location: navbar
+    type: textbox
   navbar:
     left:
       - href: posts/lynma01.github.io.qmd
