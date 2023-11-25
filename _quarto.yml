@@ -1,0 +1,18 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd" 
+
+website:
+  title: "lynma01.github.io"
+  navbar:
+    left:
+      - href: lynma01.github.io.qmd
+        text: Home
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
