@@ -5,5 +5,12 @@
     "title": "Getting a Little Better Everyday",
     "section": "",
     "text": "Hello World!\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/hello_iris/hello_iris.html",
+    "href": "posts/hello_iris/hello_iris.html",
+    "title": "Hello Iris",
+    "section": "",
+    "text": "1 Doing the data science\n\n\n\n                                                \n\n\n\n\n2 results\nThis is the full decision tree with unsplit data: \nThis is the decision tree with split data:"
   }
 ]

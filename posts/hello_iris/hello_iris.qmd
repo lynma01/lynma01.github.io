@@ -1,0 +1,69 @@
+---
+title: "Hello Iris"
+execute:
+  echo: false
+format:
+    html:
+        code-line-numbers: true
+toc: true
+number-sections: true
+---
+
+# Doing the data science
+
+```{python}
+from sklearn import tree
+from sklearn.metrics import mean_absolute_error
+from sklearn.model_selection import train_test_split
+from ucimlrepo import fetch_ucirepo
+import plotly.express as px
+import plotly.io as pio
+import graphviz
+import numpy as np
+import pandas as pd
+import polars as pl
+```
+
+
+```{python}
+iris = fetch_ucirepo(id=53)
+train_X, val_X, train_y, val_y = train_test_split(iris.data.features, iris.data.targets, random_state=0)
+```
+
+```{python}
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(train_X, train_y)
+```
+
+
+```{python}
+predict_X = clf.predict(train_X)
+
+```
+
+
+```{python}
+df = px.data.iris()
+
+fig = px.scatter(df, x="sepal_width", y="sepal_length", color="species", template="simple_white")
+
+fig.show()
+```
+
+# results
+This is the full decision tree with unsplit data:
+![decision_tree](images/output.svg)
+
+
+This is the decision tree with split data:
+```{python}
+#| label: export visualization
+#| echo: false
+dot_data = tree.export_graphviz(clf, out_file=None, 
+                     feature_names=iris.feature_names,  
+                     class_names=iris.target_names,  
+                     filled=True, rounded=True,  
+                     special_characters=True)  
+graph = graphviz.Source(dot_data)  
+graph
+```
