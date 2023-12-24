@@ -9,6 +9,9 @@ crossref:
 
 # Introduction {#sec-introduction}
 
+# Cross References {#sec-crossref}
+## [Using Quarto Cross References](https://quarto.org/docs/authoring/cross-references.html)
+
 
 # References {#sec-references}
-- [Perspective - Interactive analytics and data visualization components](https://perspective.finos.org/)
+- [Perspective - Interactive analytics and data visualization components](https://perspective.finos.org/){#perspective}
