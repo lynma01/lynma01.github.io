@@ -4,6 +4,9 @@ format: html
 number-sections: true
 crossref:
   chapters: true
+  labels: roman
+  subref-labels: roman
+draft: true
 ---
 
 # Introduction {#sec-introduction}

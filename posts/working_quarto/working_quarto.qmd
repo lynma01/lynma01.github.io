@@ -7,15 +7,19 @@ crossref:
   chapters: true
   labels: roman
   subref-labels: roman
+draft: true
 ---
 
 # Introduction {#sec-introduction}
+I'd started today thinking about this article idea that I'd had this morning, but I quickly realized that I wasn't familiar enough with this blogging platform ([Quarto](https://quarto.org)) to accomplish the kind of publishing I was looking to have. Given there's not time like the present, I figured I'd write a quick post about the most important feature 
+
 
 # Cross References {#sec-crossref}
-This is a key portion of working across large bodies of text. Especially as different posts begin to reference other sections within the current post. Most of all 
+This is a key portion of working across large bodies of text. Especially as different posts begin to reference other sections within the current post. Most of all, using the footnotes[^footnotes] 
 
 
+# Using Quarto's Widget System
+I really like the look of the Perspective[^perspective] widget library within my notebooks.
 
-# References {#sec-references}
-- [Perspective - Interactive analytics and data visualization components](https://perspective.finos.org/){#perspective}
-- [Using Quarto Cross References](https://quarto.org/docs/authoring/cross-references.html){#cross-refs}
+[^perspective]: [Perspective - Interactive analytics and data visualization components](https://perspective.finos.org/)
+[^footnotes]: [Using Quarto Cross References](https://quarto.org/docs/authoring/cross-references.html)
