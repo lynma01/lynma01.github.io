@@ -5,13 +5,17 @@ author: "lynma01"
 number-sections: true
 crossref:
   chapters: true
+  labels: roman
+  subref-labels: roman
 ---
 
 # Introduction {#sec-introduction}
 
 # Cross References {#sec-crossref}
-## [Using Quarto Cross References](https://quarto.org/docs/authoring/cross-references.html)
+This is a key portion of working across large bodies of text. Especially as different posts begin to reference other sections within the current post. Most of all 
+
 
 
 # References {#sec-references}
 - [Perspective - Interactive analytics and data visualization components](https://perspective.finos.org/){#perspective}
+- [Using Quarto Cross References](https://quarto.org/docs/authoring/cross-references.html){#cross-refs}
