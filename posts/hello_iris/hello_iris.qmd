@@ -50,7 +50,7 @@ fig.show()
 
 # results
 This is the full decision tree with unsplit data:
-![decision_tree](images/output.svg)
+![decision_tree](hello_iris/images/output.svg)
 
 
 This is the decision tree with split data:

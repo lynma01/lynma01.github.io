@@ -1,0 +1,7 @@
+---
+title: "Analyzing Dyson Sphere Program"
+format: html
+---
+
+
+https://github.com/factoriolab/factoriolab
