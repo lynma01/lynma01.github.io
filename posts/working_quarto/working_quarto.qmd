@@ -40,6 +40,10 @@ title: "My Document"
 ::: {.callout-important}
 Note that we use an underscore (_) prefix for the included file. You should always use an underscore prefix with included files so that they are automatically ignored (i.e. not treated as standalone files) by a quarto render of a project.[^includes]
 :::
+
+## [Code Annotation](https://quarto.org/docs/authoring/code-annotation.html#annotation-syntax)
+
+
 # Okay, that's cool, but let's run some code  
 
 
