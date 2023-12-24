@@ -1,7 +1,6 @@
 ---
 title: "Working with Quarto Publishing"
 format: html
-author: "lynma01"
 number-sections: true
 crossref:
   chapters: true
@@ -11,7 +10,10 @@ draft: true
 ---
 
 # Introduction {#sec-introduction}
-I'd started today thinking I'd be writing a very different post.  that I'd had this morning, but I quickly realized that I wasn't familiar enough with this blogging platform ([Quarto](https://quarto.org)) to accomplish the kind of published "look" that I wanted. Given there's not time like the present, I figured I'd write a quick post about the most important feature 
+I'd started today thinking I'd be writing a very different post. As I was sketching-out my idea, I quickly realized I wasn't familiar enough with [Quarto](https://quarto.org) to incorporate the functions I value in other blogs/newsletters I really enjoy. So instead, I've thrown together this post about my favorite concepts in writing, and how to implement them.
+
+# My favorite functions within reading on the internet:
+
 
 
 # Cross References {#sec-crossref}
