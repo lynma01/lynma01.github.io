@@ -15,7 +15,7 @@ I'd started today thinking I'd be writing a very different post. As I was sketch
 # My favorite reading-tools on the internet:
 ## Links
 
-## Heading numbers
+## Heading numbers, Cross-References, 
 
 ## 
 
