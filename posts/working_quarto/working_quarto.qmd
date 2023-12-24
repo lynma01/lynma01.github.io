@@ -31,7 +31,7 @@ This is a key portion of working across large bodies of text. Especially as diff
 
 
 ## Using Quarto's Widget System
-I really like the look of the Perspective[^perspective] widget library within my notebooks. Perspective already has some examples for how to include their widgets within a notebook[^perspective_jupyter]
+I really like the look of the Perspective[^perspective] widget library within my notebooks. Perspective already has some examples for how to include their widgets within a notebook[^perspective_jupyter]. It's also got some really cool options for [plotting simulations in a browser](https://www.prospective.co/blog/market-simulation).  
 
 
 
