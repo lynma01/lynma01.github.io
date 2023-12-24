@@ -6,9 +6,12 @@ crossref:
   chapters: true
   labels: roman
   subref-labels: roman
-draft: true
 filters:
    - nutshell
+
+
+draft: true
+
 ---
 
 # Introduction {#sec-introduction}

@@ -6,9 +6,11 @@ crossref:
   chapters: true
   labels: roman
   subref-labels: roman
-draft: true
 filters:
    - nutshell
+
+
+draft: true
 ---
 
 ## Examples:
@@ -16,8 +18,10 @@ filters:
   - https://github.com/daniellmb/MinPubSub
 
 
-
 I think the mark of greatness for any game is how ***alive*** it is; where static visuals of data can be beautiful, like those found on [Flowing Data](https://flowingdata.com/), games reflect changes from the decisions of the user.
 
 # Where does fun come from?
 Fun and play are vital to all of us, but the nature of how we socially-signal our "in-group" worthiness is always at play. 
+
+# Strategy, Systems, and the evolutionary struggle to see the "big picture"
+Another Nicky Chase learning-device for illustrating system dynamics called [loopy](https://ncase.me/loopy/)
