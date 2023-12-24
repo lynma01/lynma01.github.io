@@ -9,9 +9,9 @@
   {
     "objectID": "posts/hello_iris/hello_iris.html",
     "href": "posts/hello_iris/hello_iris.html",
-    "title": "Hello Iris",
+    "title": "Doing the data science",
     "section": "",
-    "text": "1 Doing the data science\n\nfrom sklearn import tree\nfrom sklearn.metrics import mean_absolute_error\nfrom sklearn.model_selection import train_test_split\nfrom ucimlrepo import fetch_ucirepo\nimport plotly.express as px\nimport plotly.io as pio\nimport graphviz\nimport numpy as np\nimport pandas as pd\nimport polars as pl\n\n\niris = fetch_ucirepo(id=53)\ntrain_X, val_X, train_y, val_y = train_test_split(iris.data.features, iris.data.targets, random_state=0)\n\n\nclf = tree.DecisionTreeClassifier()\nclf = clf.fit(train_X, train_y)\n\n\npredict_X = clf.predict(train_X)\n\n\ndf = px.data.iris()\n\nfig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", color=\"species\", template=\"simple_white\")\n\nfig.show()\n\n\n                                                \n\n\n\n\n2 results\nThis is the full decision tree with unsplit data: \nThis is the decision tree with split data:"
+    "text": "from sklearn import tree\nfrom sklearn.metrics import mean_absolute_error\nfrom sklearn.model_selection import train_test_split\nfrom ucimlrepo import fetch_ucirepo\nimport plotly.express as px\nimport plotly.io as pio\nimport graphviz\nimport numpy as np\nimport pandas as pd\nimport polars as pl\n\n\niris = fetch_ucirepo(id=53)\ntrain_X, val_X, train_y, val_y = train_test_split(iris.data.features, iris.data.targets, random_state=0)\n\n\nclf = tree.DecisionTreeClassifier()\nclf = clf.fit(train_X, train_y)\n\n\npredict_X = clf.predict(train_X)\n\n\ndf = px.data.iris()\n\nfig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", color=\"species\", template=\"simple_white\")\n\nfig.show()\n\n\n                                                \n\n\n\nresults\nThis is the full decision tree with unsplit data: \nThis is the decision tree with split data:"
   },
   {
     "objectID": "lynma01.github.io.html",
@@ -19,12 +19,5 @@
     "title": "Getting a Little Better Everyday",
     "section": "",
     "text": "Hello World!\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/dyson_sphere_program/dyson_sphere_program.html",
-    "href": "posts/dyson_sphere_program/dyson_sphere_program.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "Introduction\nhttps://github.com/factoriolab/factoriolab"
   }
 ]
