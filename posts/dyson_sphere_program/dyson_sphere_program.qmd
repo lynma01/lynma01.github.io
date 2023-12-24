@@ -1,6 +1,9 @@
 ---
 title: "Analyzing Dyson Sphere Program"
 format: html
+number-sections: true
+crossref:
+  chapters: true
 ---
 
 
