@@ -15,14 +15,14 @@ draft: true
 ---
 
 # Introduction {#sec-introduction}
-I'd started today thinking I'd be writing a very different post. As I was sketching-out my idea, I quickly realized I wasn't familiar enough with [Quarto](https://quarto.org) to incorporate its best parts. Instead, I've thrown together this post about my favorite concepts in writing, and how to implement them.
+I'd started today thinking I'd be writing a very different post. As I was sketching-out my idea, I quickly realized I wasn't familiar enough with [Quarto](https://quarto.org) to incorporate its best parts. Instead, I've made this post about my favorite parts of online writing, and how to implement them within Quarto.
 
 ## Why Use Quarto?
 It's the best tool I can think of which:
     
-1. Acts as a "***Literate Programming***"[^literate_programming] platform, which is a programming paradigm that I've always been fascinated with.
+1. Can implement the "***Literate Programming***"[^literate_programming] paradigm, a method of writing and coding that I've always been fascinated with.
     
-2. Presents an easy way for me to create a website/blog thing.
+2. Allows me to easily publish this website/blog thing with all my favorite reading UI/UX features.  
     
 3. It looks good, which, let's be honest, matters a great deal.  
 
@@ -32,7 +32,7 @@ It's the best tool I can think of which:
 ## Heading numbers
 
 ## Cross-References & Footnotes
-This is a key portion of working across large bodies of text. Especially as different posts begin to reference other sections within the current post[^cross_references]. Most of all, footnotes are an often underrated tool for writers: .  
+This is a key portion of working across large bodies of text. Especially as different posts begin to reference other sections within the current post[^cross_references]. Most of all, footnotes are an often underrated tool for writers: while Infinite Jest is a great example of how footnotes can be fun, [Matt Levine, author of Bloomberg's Money Stuff](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) does a great job of showing how footnotes can be both helpful ***and*** fun.  
 
 
 ## Embeds (AKA: "[Includes](https://quarto.org/docs/authoring/includes.html)")
