@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: docs
-
   render:
     - "*.qmd" 
 
@@ -15,7 +14,30 @@ website:
       - href: posts/lynma01.github.io.qmd
         text: Home
 
+execute: 
+  cache: true
+
 format:
   html:
-    theme: cosmo
+    # html themes from bootswatch
+    theme:
+      light: litera
+      dark:  cyborg
+    # text formatting for table of contents, chapters, etc.
     toc: true
+    number-sections: true    
+    crossref:
+      chapters: true
+      labels: roman
+      subref-labels: roman
+    # for dealing with source code
+    code-tools:
+      source: true
+      toggle: false
+      caption: none
+    code-line-numbers: true
+    # for Mermaid digrams and other extensions
+    mermaid:
+      theme: forest
+    filters:
+      - nutshell
