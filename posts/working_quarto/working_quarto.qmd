@@ -31,11 +31,12 @@ It's the best tool I can think of which:
 
 ## Heading numbers
 
-## Cross-References & Footnotes[^footnotes]
-This is a key portion of working across large bodies of text. Especially as different posts begin to reference other sections within the current post. Most of all, using the footnotes[^footnotes] 
+## Cross-References & Footnotes
+This is a key portion of working across large bodies of text. Especially as different posts begin to reference other sections within the current post[^cross_references]. Most of all, footnotes are an often underrated tool for writers: .  
 
 
-## Embeds (AKA: "Includes")[^includes]
+## Embeds (AKA: "[Includes](https://quarto.org/docs/authoring/includes.html)")
+Depending on how it's implemented, re-using previous content can either be a useful method for reinforcing and important idea, or a really fucking annoying method of maximizing an SEO ranking. [^includes]
 
 
 # Running Computations  
@@ -52,6 +53,6 @@ I really like the look of the Perspective[^perspective] widget library within my
 
 [^perspective_jupyter]: [Perspective - Jupyter Notebook Example](http://beta.mybinder.org/v2/gh/finos/perspective/master?urlpath=lab/tree/examples/jupyter-notebooks)
 
-[^footnotes]: [Using Quarto Cross References](https://quarto.org/docs/authoring/cross-references.html)
+[^cross_references]: [Using Quarto Cross References](https://quarto.org/docs/authoring/cross-references.html)
 
 [^includes]: [Using Quarto Includes](https://quarto.org/docs/authoring/includes.html)
