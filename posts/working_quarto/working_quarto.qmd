@@ -29,6 +29,14 @@ This is a key portion of working across large bodies of text. Especially as diff
 ## Embeds (AKA: "[Includes](https://quarto.org/docs/authoring/includes.html)")
 Depending on how it's implemented, re-using previous content is either a useful way to reinforce an idea, or a really fucking annoying way of maximizing an SEO ranking. In this case, we can easily re-use our previous writing by using Quarto's Includes[^includes]:
 
+```
+---
+title: "My Document"
+---
+{{< include _data.qmd >}}
+
+# Use the data...
+```
 
 
 
