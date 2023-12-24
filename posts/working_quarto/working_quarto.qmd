@@ -2,10 +2,13 @@
 title: "Working with Quarto Publishing"
 format: html
 author: "lynma01"
-date: "2023-12-24"
 number-sections: true
 crossref:
   chapters: true
 ---
 
 # Introduction {#sec-introduction}
+
+
+# References {#sec-references}
+- [Perspective - Interactive analytics and data visualization components](https://perspective.finos.org/)
