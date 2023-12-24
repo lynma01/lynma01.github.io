@@ -18,7 +18,13 @@ draft: true
 I'd started today thinking I'd be writing a very different post. As I was sketching-out my idea, I quickly realized I wasn't familiar enough with [Quarto](https://quarto.org) to incorporate its best parts. Instead, I've thrown together this post about my favorite concepts in writing, and how to implement them.
 
 ## Why Use Quarto?
-It's the closest I've currently got to a "***Literate Programming***"[^literate_programming] platform
+It's the best tool I can think of which:
+    
+1. Acts as a "***Literate Programming***"[^literate_programming] platform, which is a programming paradigm that I've always been fascinated with.
+    
+2. Presents an easy way for me to create a website/blog thing.
+    
+3. It looks good, which, let's be honest, matters a great deal.  
 
 
 # Putting the "Literate" in Literate Programming
