@@ -31,11 +31,15 @@ This is a key portion of working across large bodies of text. Especially as diff
 
 
 ## Using Quarto's Widget System
-I really like the look of the Perspective[^perspective] widget library within my notebooks.
+I really like the look of the Perspective[^perspective] widget library within my notebooks. Perspective already has some examples for how to include their widgets within a notebook[^perspective_jupyter]
+
+
 
 [^literate_programming]: [Literate Programming](http://literateprogramming.com/)
 
 [^perspective]: [Perspective - Interactive analytics and data visualization components](https://perspective.finos.org/)
+
+[^perspective_jupyter]: [Perspective - Jupyter Notebook Example](http://beta.mybinder.org/v2/gh/finos/perspective/master?urlpath=lab/tree/examples/jupyter-notebooks)
 
 [^footnotes]: [Using Quarto Cross References](https://quarto.org/docs/authoring/cross-references.html)
 
