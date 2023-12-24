@@ -1,0 +1,14 @@
+---
+title: "Models, Games, and Simulations"
+format: html
+number-sections: true
+crossref:
+  chapters: true
+  labels: roman
+  subref-labels: roman
+draft: true
+filters:
+   - nutshell
+---
+
+https://github.com/ncase/sim
