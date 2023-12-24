@@ -11,7 +11,10 @@ filters:
    - nutshell
 ---
 
-https://github.com/ncase/sim
+## Examples:
+- The most excellent Nicky Chase's [emoji-based simulation of the game-of-life](https://github.com/ncase/sim)
+  - https://github.com/daniellmb/MinPubSub
+
 
 
 I think the mark of greatness for any game is how ***alive*** it is; where static visuals of data can be beautiful, like those found on [Flowing Data](https://flowingdata.com/), games reflect changes from the decisions of the user.
