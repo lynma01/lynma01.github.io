@@ -12,23 +12,25 @@ draft: true
 # Introduction {#sec-introduction}
 I'd started today thinking I'd be writing a very different post. As I was sketching-out my idea, I quickly realized I wasn't familiar enough with [Quarto](https://quarto.org) to incorporate its best parts. So instead, I've thrown together this post about my favorite concepts in writing, and how to implement them.
 
-# My favorite reading-tools on the internet:
+## Why Use Quarto?
 
-## Text Formatting, and Hyperlinks
 
-### Heading numbers
 
-### Cross-References & Footnotes[^footnotes]
+# Putting the "Literate" in Literate Programming
+
+## Heading numbers
+
+## Cross-References & Footnotes[^footnotes]
 This is a key portion of working across large bodies of text. Especially as different posts begin to reference other sections within the current post. Most of all, using the footnotes[^footnotes] 
 
 
-### Embeds (AKA: "Includes")[^includes]
+## Embeds (AKA: "Includes")[^includes]
 
 
-## Literate Programming  
+# Running Computations  
 
 
-# Using Quarto's Widget System
+## Using Quarto's Widget System
 I really like the look of the Perspective[^perspective] widget library within my notebooks.
 
 [^perspective]: [Perspective - Interactive analytics and data visualization components](https://perspective.finos.org/)
