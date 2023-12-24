@@ -13,6 +13,10 @@ website:
     left:
       - href: posts/lynma01.github.io.qmd
         text: Home
+  twitter-card: true
+  open-graph:
+    locale: es_ES
+    site-name: "lynma01.github.io"
 
 execute: 
   cache: true
