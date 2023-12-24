@@ -1,6 +1,10 @@
 ---
 title: "Working with Quarto Publishing"
-format: html
+format: 
+    html
+theme:
+    light: flatly
+    dark: darkly
 number-sections: true
 crossref:
   chapters: true
