@@ -12,3 +12,9 @@ filters:
 ---
 
 https://github.com/ncase/sim
+
+
+I think the mark of greatness for any game is how ***alive*** it is; where static visuals of data can be beautiful, like those found on [Flowing Data](https://flowingdata.com/), games reflect changes from the decisions of the user.
+
+# Where does fun come from?
+Fun and play are vital to all of us, but the nature of how we socially-signal our "in-group" worthiness is always at play. 
