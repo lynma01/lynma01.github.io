@@ -1,10 +1,10 @@
 ---
 title: "Working with Quarto Publishing"
 format: 
-    html
-theme:
-    light: flatly
-    dark: darkly
+    html:
+        theme:
+            light: flatly
+            dark: darkly
 number-sections: true
 crossref:
   chapters: true
@@ -15,7 +15,6 @@ filters:
 
 
 draft: true
-
 ---
 
 # Introduction {#sec-introduction}
