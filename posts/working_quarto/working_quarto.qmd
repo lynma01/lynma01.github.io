@@ -11,7 +11,7 @@ draft: true
 ---
 
 # Introduction {#sec-introduction}
-I'd started today thinking about this article idea that I'd had this morning, but I quickly realized that I wasn't familiar enough with this blogging platform ([Quarto](https://quarto.org)) to accomplish the kind of publishing I was looking to have. Given there's not time like the present, I figured I'd write a quick post about the most important feature 
+I'd started today thinking I'd be writing a very different post.  that I'd had this morning, but I quickly realized that I wasn't familiar enough with this blogging platform ([Quarto](https://quarto.org)) to accomplish the kind of published "look" that I wanted. Given there's not time like the present, I figured I'd write a quick post about the most important feature 
 
 
 # Cross References {#sec-crossref}
