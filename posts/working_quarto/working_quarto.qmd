@@ -20,7 +20,8 @@ It's the best tool I can think of which:
 
 # Putting the "Literate" in Literate Programming
 
-## Heading numbers
+## Creating Consistent Formatting across all your posts
+This is where the `_quarto.yml` file comes into play. 
 
 ## Cross-References & Footnotes
 This is a key portion of working across large bodies of text. Especially as different posts begin to reference other sections within the current post[^cross_references]. Most of all, footnotes are an often underrated tool for writers: while Infinite Jest is a great example of how footnotes can be fun, [Matt Levine, author of Bloomberg's Money Stuff](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) does a great job of showing how footnotes can be both helpful ***and*** fun.  
@@ -44,10 +45,7 @@ Note that we use an underscore (_) prefix for the included file. You should alwa
 ## [Code Annotation](https://quarto.org/docs/authoring/code-annotation.html#annotation-syntax)
 
 
-
-
 # Okay, that's cool, but let's run some code  
-
 
 ## Using Quarto's Widget System
 I really like the look of the Perspective[^perspective] widget library within my notebooks. Perspective already has some examples for how to include their widgets within a notebook[^perspective_jupyter]. It's also got some really cool options for [plotting simulations in a browser](https://www.prospective.co/blog/market-simulation).  
