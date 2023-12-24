@@ -1,11 +1,6 @@
 ---
 title: "Hello Iris"
-format:
-    html:
-        code-line-numbers: true
-toc: true
-number-sections: true
-
+format: html
 
 draft: true
 ---
