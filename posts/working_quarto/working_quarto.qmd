@@ -11,9 +11,9 @@ I'd started today thinking I'd be writing a very different post. As I was sketch
 ## Why Use Quarto?
 It's the best tool I can think of which:
     
-1. Can implement the "***Literate Programming***"[^literate_programming] paradigm, a method of writing and coding that I've always been fascinated with.
+1. Implements a notebook-style of "***Literate Programming***"[^literate_programming].
     
-2. Allows me to easily publish this website/blog thing with all my favorite reading UI/UX features.  
+2. Allows me to easily post with all my favorite reading UI/UX features.  
     
 3. It looks good, which, let's be honest, matters a great deal.  
 
@@ -27,10 +27,12 @@ This is a key portion of working across large bodies of text. Especially as diff
 
 
 ## Embeds (AKA: "[Includes](https://quarto.org/docs/authoring/includes.html)")
-Depending on how it's implemented, re-using previous content can either be a useful method for reinforcing and important idea, or a really fucking annoying method of maximizing an SEO ranking. [^includes]
+Depending on how it's implemented, re-using previous content is either a useful way to reinforce an idea, or a really fucking annoying way of maximizing an SEO ranking. In this case, we can easily re-use our previous writing by using Quarto's Includes[^includes]:
 
 
-# Running Computations  
+
+
+# Okay, that's cool, but let's run some code  
 
 
 ## Using Quarto's Widget System
