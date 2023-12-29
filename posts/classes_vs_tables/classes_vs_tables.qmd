@@ -7,15 +7,17 @@ draft: true
 ---
 
 # A Sneaking Suspicion
-I've mostly completed my first ever python CLI-app for automatically extracting data in a particularly torturous .tsv format from a Microsoft SQL Server database. The experience has gotten me thinking about how I think about programming. 
+I've mostly completed my first ever python CLI-app for automatically extracting data in a particularly torturous .tsv format from a Microsoft SQL Server database. I say *mostly* because the database connection drops whenever I run it as anything other than a Jupyter notebook. Sufficed to say, it's gotten me thinking a lot about how I think about programming. 
 
 > I'm under the constant suspicion that I've been doing things extremely inefficiently, but because I don't know any better way- I'm left with only an unproven feeling.  
 
-This is where many tutorials or help-articles fall flat: they only help you solve the problem at hand, but fall flat when you start weaving those solutions together into a meaningful whole. The problem of creating an system from disparate parts is no easy-thing. And it's gotten me extremely intrigued about what I believe the important problem to be: getting better at the *craft*, and I stand by my usage of the word[^what_is_craft].
+This is where many tutorials or help-articles fall flat: they help you solve the problem at hand, but fall flat when you start weaving those solutions together into a meaningful whole. The problem of creating an system from disparate parts is no easy-thing. And it's gotten me extremely intrigued about what I believe the important problem to be: getting better at the *craft*, and I stand by my usage of the word[^what_is_craft].
 
 Now, I certainly have no-one to answer to with this script. It's about ~700 lines of python code acting as a wrapper for ~4,000 lines of legacy-SQL that some poor analyst had to run manually while changing the variables.
 
-What may be alarming to any developers reading this[^ha] is that I've done all of this with only one class declaration for the database connection. I understand that there is a paradigm known as "[Functional Programming](https://github.com/readme/guides/functional-programming-basics)" which doesn't seem to use classes(?) however,  I've never done a code-review with anyone who has "Developer" in their title, so I'm left to guess as to whether that is alarming or not. Or even whether my code is intelligible or not. 
+What may be alarming to any developers reading this[^ha] is that I've done all of this with only one class declaration for the database connection. I understand that there is a paradigm known as "[Functional Programming](https://github.com/readme/guides/functional-programming-basics)" which doesn't seem to use classes(?) however,  I've never done a code-review with anyone who has "Developer" in their title, so I'm left to guess as to whether that is alarming or not. Or even whether my code is intelligible or not.
+
+
 
 The databricks notebooks run, the 5 gig-large dashboards refresh every hour, and I move onto hunting the next analytical-turkey to feather another executive's cap. But every now-and-then, I'll see the a class declaration made in Scala and I'll pause for a moment- wondering what life would be like if I actually knew how to use classes properly?
 
