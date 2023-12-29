@@ -15,8 +15,7 @@ This is where many tutorials or help-articles fall flat: they can only help you 
 
 I feel as though there's a specific kind of mental-block that occurs in people who learned programming through Excel as I have. And that's largely evinced through my complete confusion whenever I see `class` . 
 
-[^what_is_craft]: I'd like to define craft in the  
-
+[^what_is_craft]: Programming is inherently practical, but just like any other practical profession- the professionals who undertake the work are quick to differentiate themselves based on the quality of their output. That is to say, there is such a thing as "sloppy" programming as there is "elegant" programming; or programming with/in "[good taste](https://github.com/mkirchner/linked-list-good-taste)".  
 
 [^managers_standards]: In the US at least, everyone's first instinct on LinkedIn is to refer to them selves as an *engineer* of some-sort to negotiate a higher salary. But while people with technical skills may abound (cough, cough), there seems to be an enormous deficit when it comes to managers who insist on code-quality standards which improve the overall experience for their employees.
 
