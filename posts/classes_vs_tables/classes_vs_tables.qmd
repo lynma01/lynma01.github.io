@@ -11,9 +11,12 @@ I've mostly completed my first ever python CLI-app for automatically extracting 
 
 > I'm under the constant suspicion that I've been doing things extremely inefficiently, but because I don't know any better way- I'm left with only an unproven feeling.  
 
-This is where many tutorials or help-articles fall flat: they can only help you solve the problem at hand, but they can't help you solve the most important problem- getting better at the *craft*, and I stand by my usage of the word[^1].
+This is where many tutorials or help-articles fall flat: they can only help you solve the problem at hand, but they can't help you solve the most important problem- getting better at the *craft*, and I stand by my usage of the word[^what_is_craft].
 
 I feel as though there's a specific kind of mental-block that occurs in people who learned programming through Excel as I have. And that's largely evinced through my complete confusion whenever I see `class` . 
 
-[^1]: In the US at least, everyone's first instinct on LinkedIn is to refer to them selves as an *engineer* of some-sort to negotiate a higher salary. But without some sense of "taste" 
+[^what_is_craft]: I'd like to define craft in the  
+
+
+[^managers_standards]: In the US at least, everyone's first instinct on LinkedIn is to refer to them selves as an *engineer* of some-sort to negotiate a higher salary. But while people with technical skills may abound (cough, cough), there seems to be an enormous deficit when it comes to managers who insist on code-quality standards which improve the overall experience for their employees.
 
