@@ -1,0 +1,11 @@
+---
+title: "Classes versus tables, AKA - you obviously learned programming in Excel"
+filters:
+   - nutshell
+
+draft: true
+---
+# Summary
+I've mostly completed my first ever python CLI-app for automatically extracting data in a particularly torturous .tsv format from a Microsoft SQL Server database. The experience has gotten me thinking about how I think about programming. Likewise, after reading help-article after help-article, it's gotten me comparing my own mental-models against how other developers on the internet think.
+
+My only conclusion is that there's a specific kind of mental-block that occurs in people who learned programming through Excel as I have. Arguably,  ***classes***. 
