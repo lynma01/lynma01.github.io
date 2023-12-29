@@ -132,11 +132,11 @@ product_ids = list(range(1, 11))
 category_ids = list(range(1, 6))
 
 for product_id in product_ids: 
-    random.shuffle(category_ids) 
-    num_categories = random.randint(1, 3) 
-    selected_categories = category_ids[:num_categories] 
-    for category_id in selected_categories: 
-        cursor.execute("INSERT INTO ProductCategory (ProductID, CategoryID) VALUES (?, ?)", (product_id, category_id)) 
+  random.shuffle(category_ids) 
+  num_categories = random.randint(1, 3) 
+  selected_categories = category_ids[:num_categories] 
+  for category_id in selected_categories: 
+      cursor.execute("INSERT INTO ProductCategory (ProductID, CategoryID) VALUES (?, ?)", (product_id, category_id)) 
  
 # Generate fake data for Customer table 
 for _ in range(5): 
