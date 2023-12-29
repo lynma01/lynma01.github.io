@@ -22,13 +22,13 @@ Another Nicky Chase learning-device for illustrating system dynamics called [loo
 ```{python}
 from faker import Faker 
 import random 
-import sqlite3 
+import duckdb 
 from datetime import datetime, timedelta 
  
 fake = Faker() 
  
 # Create SQLite database and connect to it 
-conn = sqlite3.connect('online_merch_store.db') 
+conn = duckdb.connect('online_merch_store.db') 
 cursor = conn.cursor() 
  
 # Create Product table 
