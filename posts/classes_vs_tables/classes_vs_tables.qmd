@@ -13,6 +13,8 @@ I've mostly completed my first ever python CLI-app for automatically extracting 
 
 This is where many tutorials or help-articles fall flat: they can only help you solve the problem at hand, but they can't help you solve the most important problem- getting better at the *craft*, and I stand by my usage of the word[^what_is_craft].
 
+Now, I certainly have no-one to answer to with this script. It's about ~700 lines of python code acting as a wrapper for ~2,000 lines of SQL.  
+
 I feel as though there's a specific kind of mental-block that occurs in people who learned programming through Excel as I have. And that's largely evinced through my complete confusion whenever I see a `class` declaration. 
 
 
