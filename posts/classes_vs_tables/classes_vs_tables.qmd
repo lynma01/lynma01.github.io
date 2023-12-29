@@ -1,11 +1,19 @@
 ---
-title: "Classes versus tables, AKA - you obviously learned programming in Excel"
+title: "When you've learn programming on Excel/SQL and it shows"
 filters:
    - nutshell
 
 draft: true
 ---
-# Summary
-I've mostly completed my first ever python CLI-app for automatically extracting data in a particularly torturous .tsv format from a Microsoft SQL Server database. The experience has gotten me thinking about how I think about programming. Likewise, after reading help-article after help-article, it's gotten me comparing my own mental-models against how other developers on the internet think.
 
-My only conclusion is that there's a specific kind of mental-block that occurs in people who learned programming through Excel as I have. Arguably,  ***classes***. 
+# A Sneaking Suspicion
+I've mostly completed my first ever python CLI-app for automatically extracting data in a particularly torturous .tsv format from a Microsoft SQL Server database. The experience has gotten me thinking about how I think about programming. 
+
+> I'm under the constant suspicion that I've been doing things extremely inefficiently, but because I don't know any better way- I'm left with only an unproven feeling.  
+
+This is where many tutorials or help-articles fall flat: they can only help you solve the problem at hand, but they can't help you solve the most important problem- getting better at the *craft*, and I stand by my usage of the word[^1].
+
+I feel as though there's a specific kind of mental-block that occurs in people who learned programming through Excel as I have. And that's largely evinced through my complete confusion whenever I see `class` . 
+
+[^1]: In the US at least, everyone's first instinct on LinkedIn is to refer to them selves as an *engineer* of some-sort to negotiate a higher salary. But without some sense of "taste" 
+
