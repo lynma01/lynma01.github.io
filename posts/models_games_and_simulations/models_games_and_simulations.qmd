@@ -28,77 +28,8 @@ from datetime import datetime, timedelta
 fake = Faker() 
  
 # Create SQLite database and connect to it 
-conn = duckdb.connect('online_merch_store.db') 
-cursor = conn.cursor() 
- 
-# Create Product table 
-cursor.execute(''' 
-    CREATE TABLE IF NOT EXISTS Product ( 
-        ProductID INTEGER PRIMARY KEY, 
-        Name TEXT NOT NULL, 
-        Description TEXT, 
-        Price REAL NOT NULL, 
-        StockQuantity INTEGER NOT NULL 
-    ) 
-''') 
- 
-# Create Category table 
-cursor.execute(''' 
-    CREATE TABLE IF NOT EXISTS Category ( 
-        CategoryID INTEGER PRIMARY KEY, 
-        Name TEXT NOT NULL 
-    ) 
-''') 
- 
-# Create ProductCategory table 
-cursor.execute(''' 
-    CREATE TABLE IF NOT EXISTS ProductCategory ( 
-        ProductID INTEGER, 
-        CategoryID INTEGER, 
-        PRIMARY KEY (ProductID, CategoryID), 
-        FOREIGN KEY (ProductID) REFERENCES Product(ProductID), 
-        FOREIGN KEY (CategoryID) REFERENCES Category(CategoryID) 
-    ) 
-''') 
- 
-# Create Customer table 
-cursor.execute(''' 
-    CREATE TABLE IF NOT EXISTS Customer ( 
-        CustomerID INTEGER PRIMARY KEY, 
-        FirstName TEXT NOT NULL, 
-        LastName TEXT NOT NULL, 
-        Email TEXT NOT NULL, 
-        Password TEXT NOT NULL, 
-        Address TEXT 
-    ) 
-''') 
- 
-# Create Order table 
-cursor.execute(''' 
-    CREATE TABLE IF NOT EXISTS "Order" ( 
-        OrderID INTEGER PRIMARY KEY, 
-        CustomerID INTEGER, 
-        OrderDate TEXT DEFAULT CURRENT_TIMESTAMP, 
-        TotalAmount REAL NOT NULL, 
-        OrderStatus TEXT NOT NULL, 
-        FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID) 
-    ) 
-''') 
- 
-# Create OrderItem table 
-cursor.execute(''' 
-    CREATE TABLE IF NOT EXISTS OrderItem ( 
-        OrderID INTEGER, 
-        ProductID INTEGER, 
-        Quantity INTEGER NOT NULL, 
-        Price REAL NOT NULL, 
-        PRIMARY KEY (OrderID, ProductID), 
-        FOREIGN KEY (OrderID) REFERENCES "Order"(OrderID), 
-        FOREIGN KEY (ProductID) REFERENCES Product(ProductID) 
-    ) 
-''') 
-conn.commit() 
-conn.close()
+with duckdb.connect('online_merch_store.db') as conn: 
+  conn.cursor().exec("SELECT 52") 
 
 ```
 
