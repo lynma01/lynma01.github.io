@@ -102,6 +102,17 @@ conn.close()
 
 ```
 
+```{python}
+order_data = {
+  "OrderID": "some_id"
+  , "CustomerID": "some_id"
+  , ""
+}
+
+
+```
+
+
 
 ```{python}
 conn = sqlite3.connect('online_merch_store.db') 
