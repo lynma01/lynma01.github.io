@@ -11,21 +11,25 @@ I've mostly completed my first ever python CLI-app for automatically extracting 
 
 > I'm under the constant suspicion that I've been doing things extremely inefficiently, but because I don't know any better way- I'm left with only an unproven feeling.  
 
-This is where many tutorials or help-articles fall flat: they can only help you solve the problem at hand, but weaving those solutions together into a meaningful whole? Yeah, Stackoverflow can only get you so far. The problem of *crafting* an efficient whole from a series of disparate parts is no easy-thing. And it's gotten me extremely intrigued about what I believe the important problem to be: getting better at the *craft*, and I stand by my usage of the word[^what_is_craft].
+This is where many tutorials or help-articles fall flat: they only help you solve the problem at hand, but fall flat when you start weaving those solutions together into a meaningful whole. The problem of creating an system from disparate parts is no easy-thing. And it's gotten me extremely intrigued about what I believe the important problem to be: getting better at the *craft*, and I stand by my usage of the word[^what_is_craft].
 
 Now, I certainly have no-one to answer to with this script. It's about ~700 lines of python code acting as a wrapper for ~4,000 lines of legacy-SQL that some poor analyst had to run manually while changing the variables.
 
-What may be a little alarming to any developers reading this is that I've done all of this with only one class declaration for the database connection. However, because I've never  done a code-review with anyone who has "Developer" in their title, I'm left to guess as to whether that is alarming or not. Or even whether my code is "good" or not. 
+What may be alarming to any developers reading this[^ha] is that I've done all of this with only one class declaration for the database connection. I understand that there is a paradigm known as "[Functional Programming](https://github.com/readme/guides/functional-programming-basics)" which doesn't seem to use classes(?) however,  I've never done a code-review with anyone who has "Developer" in their title, so I'm left to guess as to whether that is alarming or not. Or even whether my code is intelligible or not. 
 
-The databricks notebooks run, the 5 gig-large dashboards refresh every hour, and I move onto hunting the next analytical-turkey to feather another executive's cap. But every now-and-then, I'll see the        
+The databricks notebooks run, the 5 gig-large dashboards refresh every hour, and I move onto hunting the next analytical-turkey to feather another executive's cap. But every now-and-then, I'll see the a class declaration made in Scala and I'll pause for a moment- wondering what life would be like if I actually knew how to use classes properly?
 
+# Okay, but classes aren't complicated - do you have brain damage or something?
+I think 
 
 
 I feel as though there's a specific kind of mental-block that occurs in people who learned programming through Excel as I have. And that's largely evinced through my complete confusion whenever I see a `class` declaration. 
 
 
 
-[^what_is_craft]: Programming is inherently practical, and while this is unintuitive[^what_is_unintuitive] for the many people who don't write code for a living, [the bare-minimum is to have the program compile](https://www.goodreads.com/quotes/6341736-any-fool-can-write-code-that-a-computer-can-understand). However, for those of us who do write code, hell, even those of who deal with really complicated spreadsheets or PowerBI reports for a living, there exists an "elegance" within any solution; or a solution created with/in "[good taste](https://github.com/mkirchner/linked-list-good-taste)". I call "solutions-with-elegance" a *craft*.   
+[^what_is_craft]: Programming is inherently practical, and while this is unintuitive[^what_is_unintuitive] for the many people who don't write code for a living, [the bare-minimum is to have the program compile](https://www.goodreads.com/quotes/6341736-any-fool-can-write-code-that-a-computer-can-understand). However, for those of us who do write code, hell, even those of who deal with really complicated spreadsheets or PowerBI reports for a living, there exists an "elegance" within any solution; or a solution created with/in "[good taste](https://github.com/mkirchner/linked-list-good-taste)". I call "solutions-with-elegance" a *craft*.
+
+[^ha]: assuming that anyone does, *ha*!
 
 [^managers_standards]: In the US at least, everyone's first instinct on LinkedIn is to refer to them selves as an *engineer* of some-sort to negotiate a higher salary. But while people with technical skills may abound (cough, cough), there seems to be an enormous deficit when it comes to managers who insist on code-quality standards which improve the overall experience for their employees.
 
