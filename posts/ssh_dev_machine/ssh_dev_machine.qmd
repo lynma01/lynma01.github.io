@@ -26,3 +26,7 @@ ssh-keyscan >> ~/.ssh/known_hosts
 ```
 
 Once that command has completed, you'll be able to login to the remote machine using `ssh $USER_NAME@$REMOTE_DOMAIN`. You will be prompted to input the user's password.
+
+# Linux's Network Management CLI: `nmcli`
+https://www.howtogeek.com/devops/how-to-manage-linux-network-connections-from-the-command-line/
+
