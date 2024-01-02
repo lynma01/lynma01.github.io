@@ -30,3 +30,10 @@ Once that command has completed, you'll be able to login to the remote machine u
 # Linux's Network Management CLI: `nmcli`
 https://www.howtogeek.com/devops/how-to-manage-linux-network-connections-from-the-command-line/
 
+# Running docker containers from there
+## Installing Docker
+https://docs.docker.com/compose/migrate/
+https://docs.docker.com/compose/install/linux/
+    - which requires: https://docs.docker.com/engine/install/ubuntu
+
+## 
