@@ -1,0 +1,26 @@
+---
+title: "Securely accessing a remote development machine with SSH"
+date: "2024-01-02"
+filters:
+   - nutshell
+
+draft: true
+---
+
+# Making your own ssh public key
+https://linuxhandbook.com/ssh-basics/
+
+```{bash}
+ssh-keygen
+```
+
+Creates both your public & private KEY, however, when we execute `ssh lynma01@[remote_host]`, we'll see an error about a man-in-the-middle attack. This is because we haven't added the remote-hosts' public key into the file `~/.ssh/known_hosts`.
+
+
+# Adding the remote hosts public key
+https://www.baeldung.com/linux/public-key-known_hosts
+
+Adding the remote-hosts' is as simple as:
+```{bash}
+ssh-keyscan >> ~/.ssh/known_hosts
+```
