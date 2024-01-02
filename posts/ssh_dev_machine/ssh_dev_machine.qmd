@@ -36,4 +36,6 @@ https://docs.docker.com/compose/migrate/
 https://docs.docker.com/compose/install/linux/
     - which requires: https://docs.docker.com/engine/install/ubuntu
 
-## 
+## using Environmental Variables
+https://docs.docker.com/compose/environment-variables/
+ 
