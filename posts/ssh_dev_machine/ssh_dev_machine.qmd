@@ -24,3 +24,5 @@ Adding the remote-hosts' is as simple as:
 ```{bash}
 ssh-keyscan >> ~/.ssh/known_hosts
 ```
+
+Once that command has completed, you'll be able to login to the remote machine using `ssh $USER_NAME@$REMOTE_DOMAIN`. You will be prompted to input the user's password.
