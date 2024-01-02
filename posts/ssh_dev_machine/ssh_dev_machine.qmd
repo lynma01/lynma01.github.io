@@ -7,6 +7,10 @@ filters:
 draft: true
 ---
 
+# Placing Docker Containers behind a VPN
+https://eric-pierce.com/placing-select-docker-containers-behind-a-vpn/
+
+
 # Making your own ssh public key
 https://linuxhandbook.com/ssh-basics/
 
