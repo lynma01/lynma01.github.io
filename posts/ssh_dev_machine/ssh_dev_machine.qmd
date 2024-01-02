@@ -36,6 +36,25 @@ https://docs.docker.com/compose/migrate/
 https://docs.docker.com/compose/install/linux/
     - which requires: https://docs.docker.com/engine/install/ubuntu
 
-## using Environmental Variables
+## Using Environmental Variables
 https://docs.docker.com/compose/environment-variables/
- 
+
+## Using Docker Compose
+https://docs.docker.com/compose/gettingstarted/
+
+```
+# compose.yml
+services:
+    web:
+        build: .
+```
+^When specifying `build: .`, that tells the `web` service to use the Dockerfile in the current directory as the "image".
+
+
+```
+# Dockerfile
+
+```
+
+```
+Sets the 
