@@ -204,6 +204,8 @@ end
 
 ## Elixir `Node`s
 
+
+
 A `node` is a container for processes within a different server. One connects to `node`s as follows:
 
 ```{elixir}
@@ -211,13 +213,13 @@ IO.inspect node()
 IO.inspect Node.get_cookie()
 :ok
 
-other_node = :"jsmq4atl-livebook_server@6aebae17b1d7"
-other_cookie = :qHQdK1mN33nxFKM7YAZVBqO8NX4TXhS6
+other_node = :"jsmq4atl-livebook_server@6aebae17b1d7" # this is the name of the other node
+other_cookie = :qHQdK1mN33nxFKM7YAZVBqO8NX4TXhS6 # this is a security-key, I don't understand how it works
 
 Node.set_cookie(other_node, other_cookie)
 Node.connect(other_node)
 
 # `other_node` is now the varaible which accesses the connection
-
-
 ```
+
+This is interesting because we're now able to transfer and transform data across nodes.
