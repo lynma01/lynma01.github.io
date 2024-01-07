@@ -235,3 +235,5 @@ portal = Portal.transfer(yellow, blue, [1, 2, 3, 4])
 #                                         [1, 2, 3, 4] <=> []
 # >
 ```
+
+So, 
