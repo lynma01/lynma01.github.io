@@ -57,13 +57,14 @@ Agent.get(agent, fn list -> list end)
 
 ```{elixir}
 defmodule Portal.Door do
-  use Agent # This is a namespace statement
+  use Agent # This is a namespace statement, "bringing some `Agent`-related functionality into the module."
 
+  # This creates the portal-door
   def start_link(color) when is_atom(color) do # `when` is a guard statement, only executing when specified
-    Agent.start_link(fn -> [] end, name: color)
+    Agent.start_link(fn -> [] end, name: color) # 
   end
 
-  def get(door) do # This creates the portal-door, returning some list?
+  def get(door) do # This gets the portal-door, returning its contents
     Agent.get(door, fn list -> list end)
   end
 
@@ -71,7 +72,7 @@ defmodule Portal.Door do
     Agent.update(door, fn list -> [value | list] end)
   end
 
-  def pop(door) do # Given some door with its list, 
+  def pop(door) do # Given some door with its list, add a tuple to the list?
     Agent.get_and_update(door, fn list ->
       case list do
         # The normal case - when the list has a head & tail, return two tuples
