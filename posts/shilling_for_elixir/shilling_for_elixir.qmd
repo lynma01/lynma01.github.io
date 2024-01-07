@@ -223,6 +223,8 @@ Node.connect(other_node)
 This is interesting because we're now able to transfer and transform data across nodes.
 
 ```{elixir}
+# > So far, we have been using atoms to represent doors, such as :blue, but we can also use the {name, node} notation to refer to a process in another node. Let's give it a try:
+
 blue = {:blue, other_node}
 Portal.Door.get(blue)
 
@@ -236,4 +238,4 @@ portal = Portal.transfer(yellow, blue, [1, 2, 3, 4])
 # >
 ```
 
-So, 
+So, you can pass a `node` within a tuple as a function argument   
