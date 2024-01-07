@@ -61,7 +61,7 @@ defmodule Portal.Door do
 
   # This creates the portal-door
   def start_link(color) when is_atom(color) do # `when` is a guard statement, only executing when specified
-    Agent.start_link(fn -> [] end, name: color) # 
+    Agent.start_link(fn -> [] end, name: color) # https://hexdocs.pm/elixir/1.16.0/Agent.html#start_link/2
   end
 
   def get(door) do # This gets the portal-door, returning its contents
