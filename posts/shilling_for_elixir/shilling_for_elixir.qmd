@@ -154,6 +154,8 @@ age # returns: 27
 
 ## Protocols - extending datatypes with `defimpl`
 
+Protocols allow us to define ways for other code to make use of our own code. In this case, we're teaching the `inspect` function, which is part of the Elixir kernel, how to print a representation of our `Portal` struct within the CLI. In this case, we're just trying to make the module more user friendly.  
+
 ```{elixir}
 defimpl Inspect, for: Portal do
   def inspect(%Portal{left: left, right: right}, _) do
@@ -173,4 +175,14 @@ defimpl Inspect, for: Portal do
     """
   end
 end
+
+# And what we get as a result:
+# Portal<
+#        :red <=> :purple
+#   [1, 2, 3] <=> []
+# >
+
 ```
+
+## Elixir `Node`s
+
