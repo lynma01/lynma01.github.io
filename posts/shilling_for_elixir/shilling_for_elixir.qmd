@@ -149,8 +149,6 @@ end
 
 - Starting the same `Agent` twice will return an `{:error, {:already_started, #PID<0.205.0}}`. This tells me that Elixir is intelligent about 1: comprehending what process you're referring to, and 2: ensuring processes can't be overwritten.
 
-
-
 ## Structs
 
 ```{elixir}
