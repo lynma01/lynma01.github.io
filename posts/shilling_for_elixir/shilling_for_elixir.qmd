@@ -204,3 +204,20 @@ end
 
 ## Elixir `Node`s
 
+A `node` is a container for processes within a different server. One connects to `node`s as follows:
+
+```{elixir}
+IO.inspect node()
+IO.inspect Node.get_cookie()
+:ok
+
+other_node = :"jsmq4atl-livebook_server@6aebae17b1d7"
+other_cookie = :qHQdK1mN33nxFKM7YAZVBqO8NX4TXhS6
+
+Node.set_cookie(other_node, other_cookie)
+Node.connect(other_node)
+
+# `other_node` is now the varaible which accesses the connection
+
+
+```
