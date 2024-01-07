@@ -204,8 +204,6 @@ end
 
 ## Elixir `Node`s
 
-
-
 A `node` is a container for processes within a different server. One connects to `node`s as follows:
 
 ```{elixir}
@@ -223,3 +221,17 @@ Node.connect(other_node)
 ```
 
 This is interesting because we're now able to transfer and transform data across nodes.
+
+```{elixir}
+blue = {:blue, other_node}
+Portal.Door.get(blue)
+
+Portal.shoot(:yellow)
+yellow = {:yellow, node()}
+portal = Portal.transfer(yellow, blue, [1, 2, 3, 4])
+
+# #Portal<
+#  {:yellow, :"nv5thk4p-livebook_server@6aebae17b1d7"} <=> {:blue, :"jsmq4atl-livebook_server@6aebae17b1d7"}
+#                                         [1, 2, 3, 4] <=> []
+# >
+```
