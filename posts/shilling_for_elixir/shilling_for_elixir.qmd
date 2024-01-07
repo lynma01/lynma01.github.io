@@ -92,6 +92,45 @@ end
 
 Starting the same `Agent` twice will return an `{:error, {:already_started, #PID<0.205.0}}`. This tells me that Elixir is intelligent about 1: comprehending what process you're referring to, and 2: ensuring processes can't be overwritten. 
 
+```{elixir}
+defmodule Portal do
+  defstruct [:left, :right]
+
+  def shoot(color) do # `Potal` invokes `Portal.Door` without requiring a `use` statement?
+    Portal.Door.start_link(color)
+  end
+
+  def transfer(left_door, right_door, data) do
+    # First add all data to the portal on the left
+    for item <- data do # wait, so Elixir does have for loops?
+      Portal.Door.push(left_door, item)
+    end
+
+    # Returns a portal struct with the doors
+    %Portal{left: left_door, right: right_door}
+  end
+
+  def push_right(portal) do
+    # See if we can pop data from left. If so, push the
+    # popped data to the right. Otherwise, do nothing.
+    case Portal.Door.pop(portal.left) do
+      :error   -> :ok
+      {:ok, h} -> Portal.Door.push(portal.right, h)
+    end
+
+    # Let's return the portal itself
+    portal
+  end
+
+  def close(portal) do
+    Portal.Door.stop(portal.left)
+    Portal.Door.stop(portal.right)
+    :ok
+  end
+end
+
+```
+
 ## Structs
 
 ```{elixir}
