@@ -89,3 +89,27 @@ defmodule Portal.Door do
   end
 end
 ```
+
+Starting the same `Agent` twice will return an `{:error, {:already_started, #PID<0.205.0}}`. This tells me that Elixir is intelligent about 1: comprehending what process you're referring to, and 2: ensuring processes can't be overwritten. 
+
+## Structs
+
+```{elixir}
+defmodule User do # Defines a module, nothing we haven't seen before
+  defstruct [:name, :age] # This defines the data which a `User` can contain?
+end
+```
+
+However, when referring to module-`struct`s like the one above, the syntax is specific:
+
+```{elixir}
+user = %User{name: "john doe", age: 27}
+
+# Fields can be accessed with dot-notation
+user.name # returns: "john does"
+
+# Pattern matching example:
+%User{age: age} = user
+age # returns: 27
+```
+
