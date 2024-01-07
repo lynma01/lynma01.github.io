@@ -76,7 +76,7 @@ defmodule Portal.Door do
     Agent.get_and_update(door, fn list ->
       case list do
         # The normal case - when the list has a head & tail, return two tuples
-        [h | t] -> {{:ok, h}, t}
+        [h | t] -> {{:ok, h}, t} # but then removes the head?
 
         # Error case, return a tuple with `:error` and an empty list
         [] -> {:error, []}
