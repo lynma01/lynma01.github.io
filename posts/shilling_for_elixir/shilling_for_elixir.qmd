@@ -7,7 +7,13 @@ filters:
 draft: true
 ---
 
-# Functional Programming is the best paradigm for me post-lobotomy
+# Functional Programming is the best paradigm for my lobotomized lifestyle
+
+Links:
+- https://elixirschool.com/en/lessons/
+- https://elixir-lang.org/docs.html
+- https://www.syncfusion.com/succinctly-free-ebooks/elixir-succinctly
+- 
 
 ## Case statements
 Kind of like enum matching within functions
