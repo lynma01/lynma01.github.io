@@ -34,3 +34,57 @@ map = %{:elixir => :functional, :python => :object_oriented}
 
 type
 ```
+
+## Elixir Agents
+`Agent`s, `Task`s, and `genserver`s are all "processes" spawned by Elixir's process management system. Processes will always return the Process-Identifier (PID) whenever initiallized and pattern-matched like so:
+
+```{elixir}
+{:ok, agent} = Agent.start_link(fn -> [] end) # Agent that returns an empty list
+# returns: {:ok, #PID<0.166.0>}
+```
+
+But were we to `get`, or `update` the `Agent`, it would return the list we're expecting from the anonymous function:
+
+```{elixir}
+Agent.get(agent, fn list -> list end)
+# returns: []
+
+Agent.update(agent, fn list -> [0 | list] end)
+Agent.get(agent, fn list -> list end)
+```
+
+## Modules (Collections of Functions)
+
+```{elixir}
+defmodule Portal.Door do
+  use Agent # This is a namespace statement
+
+  def start_link(color) when is_atom(color) do # `when` is a guard statement, only executing when specified
+    Agent.start_link(fn -> [] end, name: color)
+  end
+
+  def get(door) do # This creates the portal-door, returning some list?
+    Agent.get(door, fn list -> list end)
+  end
+
+  def push(door, value) do # This updates the portal door to include the portal's list
+    Agent.update(door, fn list -> [value | list] end)
+  end
+
+  def pop(door) do # Given some door with its list, 
+    Agent.get_and_update(door, fn list ->
+      case list do
+        # The normal case - when the list has a head & tail, return two tuples
+        [h | t] -> {{:ok, h}, t}
+
+        # Error case, return a tuple with `:error` and an empty list
+        [] -> {:error, []}
+      end
+    end)
+  end
+
+  def stop(door) do 
+    Agent.stop(door) # I'm assuming this stops the `door` process, effectively killing the portal
+  end
+end
+```
