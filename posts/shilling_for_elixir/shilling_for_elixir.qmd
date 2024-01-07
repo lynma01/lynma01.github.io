@@ -1,0 +1,36 @@
+---
+title: "Shilling for Elixir"
+date: "2024-01-07"
+filters:
+   - nutshell
+
+draft: true
+---
+
+# Functional Programming is the best paradigm for me post-lobotomy
+
+## Case statements
+Kind of like enum matching within functions
+```{elixir}
+case Data.fromiso8601(input) do
+    {:ok, date} -> # because most functions return a tuple, we're able to easily create control-flows
+        "We got a valid date: #{inspect(date)}"
+
+    {:error, reason} -> # however, the tricky bit is that the return values are function-specific
+        "Oh no, the date is invalid. Reason: #{inpsect(reason)}"
+end
+```
+
+The basic format is `case... do... -> end`
+
+## Pattern matching
+```{elixir}
+# This is the data we're looking to match from
+map = %{:elixir => :functional, :python => :object_oriented}
+
+# The value we're specifying as the search pattern goes in the left
+# But notice how there's now a new variable `type` which holds the result
+%{:elixir => type} = map # <- Notice how the item we're inspecting goes in the right-hand side
+
+type
+```
