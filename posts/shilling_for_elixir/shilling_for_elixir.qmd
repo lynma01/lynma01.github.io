@@ -122,8 +122,8 @@ defmodule Portal do
     portal
   end
 
-  def close(portal) do
-    Portal.Door.stop(portal.left)
+  def close(portal) do # so each `Portal.Door` is an `Agent` which is killed with the `.stop` function. 
+    Portal.Door.stop(portal.left) # and each `Portal.Door` requires its own `.stop`, because they're separate
     Portal.Door.stop(portal.right)
     :ok
   end
