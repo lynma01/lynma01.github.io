@@ -16,7 +16,10 @@ The first thing is to have a narrative in mind from which we can set expectation
 But how do we define "events"? The term is too vague to give us a proper idea of what we're trying to accomplish. When I say, "events", what I mean is creating a dataset from which it's easy to interrelate cold/sterile data as rows of factoids - to the very real human drama's to which that data is trying to describe.
 
 To give an example using a dataset of a book-store, there's a few different "events" we're looking to describe:
-1. 
+1. An author writes a smash-hit, and everyone on social media is buzzing about this new genre of literary fiction known as "fairy smut".
+2. People submit review of new novels; with some being deeply impressed by the author, others are disappointed, and some readers don't even know what their personal-preferences are.
+3. An editor locks a deal with a chain of bookstores so the authorcan go on a book-signing tour; how do these events effect sales? How do they change what people say about the book?
 
+# But how is this different?
 Unlike most synthetic data, we want at least a semi-clear understanding of cause -> effect within the set. With enough cohesion to the data (AKA there's a number of evident patterns across different entities), we create narrative meaning from the patterns.
 
