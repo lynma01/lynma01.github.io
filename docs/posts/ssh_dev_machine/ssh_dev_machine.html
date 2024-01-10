@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-12-29">
+<meta name="dcterms.date" content="2024-01-02">
 
-<title>lynma01.github.io - When you’ve learn programming on Excel/SQL and it shows</title>
+<title>lynma01.github.io – Securely accessing a remote development machine with SSH</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,13 +99,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="lynma01.github.io - When you’ve learn programming on Excel/SQL and it shows">
-<meta property="og:description" content="">
+<meta property="og:title" content="lynma01.github.io - Securely accessing a remote development machine with SSH">
+<meta property="og:description" content="https://eric-pierce.com/placing-select-docker-containers-behind-a-vpn/">
 <meta property="og:image" content="home_images/acrdb.svg">
 <meta property="og:site-name" content="lynma01.github.io">
 <meta property="og:locale" content="es_ES">
-<meta name="twitter:title" content="lynma01.github.io - When you’ve learn programming on Excel/SQL and it shows">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="lynma01.github.io - Securely accessing a remote development machine with SSH">
+<meta name="twitter:description" content="https://eric-pierce.com/placing-select-docker-containers-behind-a-vpn/">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -147,8 +147,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a-sneaking-suspicion" id="toc-a-sneaking-suspicion" class="nav-link active" data-scroll-target="#a-sneaking-suspicion"><span class="header-section-number">1</span> A Sneaking Suspicion</a></li>
-  <li><a href="#okay-but-classes-arent-complicated---do-you-have-brain-damage-or-something" id="toc-okay-but-classes-arent-complicated---do-you-have-brain-damage-or-something" class="nav-link" data-scroll-target="#okay-but-classes-arent-complicated---do-you-have-brain-damage-or-something"><span class="header-section-number">2</span> Okay, but classes aren’t complicated - do you have brain damage or something?</a></li>
+  <li><a href="#placing-docker-containers-behind-a-vpn" id="toc-placing-docker-containers-behind-a-vpn" class="nav-link active" data-scroll-target="#placing-docker-containers-behind-a-vpn"><span class="header-section-number">1</span> Placing Docker Containers behind a VPN</a></li>
+  <li><a href="#making-your-own-ssh-public-key" id="toc-making-your-own-ssh-public-key" class="nav-link" data-scroll-target="#making-your-own-ssh-public-key"><span class="header-section-number">2</span> Making your own ssh public key</a></li>
+  <li><a href="#adding-the-remote-hosts-public-key" id="toc-adding-the-remote-hosts-public-key" class="nav-link" data-scroll-target="#adding-the-remote-hosts-public-key"><span class="header-section-number">3</span> Adding the remote hosts public key</a></li>
+  <li><a href="#linuxs-network-management-cli-nmcli" id="toc-linuxs-network-management-cli-nmcli" class="nav-link" data-scroll-target="#linuxs-network-management-cli-nmcli"><span class="header-section-number">4</span> Linux’s Network Management CLI: <code>nmcli</code></a></li>
+  <li><a href="#running-docker-containers-from-there" id="toc-running-docker-containers-from-there" class="nav-link" data-scroll-target="#running-docker-containers-from-there"><span class="header-section-number">5</span> Running docker containers from there</a>
+  <ul class="collapse">
+  <li><a href="#installing-docker" id="toc-installing-docker" class="nav-link" data-scroll-target="#installing-docker"><span class="header-section-number">5.1</span> Installing Docker</a></li>
+  <li><a href="#using-environmental-variables" id="toc-using-environmental-variables" class="nav-link" data-scroll-target="#using-environmental-variables"><span class="header-section-number">5.2</span> Using Environmental Variables</a></li>
+  <li><a href="#using-docker-compose" id="toc-using-docker-compose" class="nav-link" data-scroll-target="#using-docker-compose"><span class="header-section-number">5.3</span> Using Docker Compose</a></li>
+  </ul></li>
+  <li><a href="#adding-the-remote-hosts-public-key-1" id="toc-adding-the-remote-hosts-public-key-1" class="nav-link" data-scroll-target="#adding-the-remote-hosts-public-key-1"><span class="header-section-number">6</span> Adding the remote hosts public key</a></li>
+  <li><a href="#linuxs-network-management-cli-nmcli-1" id="toc-linuxs-network-management-cli-nmcli-1" class="nav-link" data-scroll-target="#linuxs-network-management-cli-nmcli-1"><span class="header-section-number">7</span> Linux’s Network Management CLI: <code>nmcli</code></a></li>
+  <li><a href="#running-docker-containers-from-there-1" id="toc-running-docker-containers-from-there-1" class="nav-link" data-scroll-target="#running-docker-containers-from-there-1"><span class="header-section-number">8</span> Running docker containers from there</a>
+  <ul class="collapse">
+  <li><a href="#installing-docker-1" id="toc-installing-docker-1" class="nav-link" data-scroll-target="#installing-docker-1"><span class="header-section-number">8.1</span> Installing Docker</a></li>
+  <li><a href="#using-environmental-variables-1" id="toc-using-environmental-variables-1" class="nav-link" data-scroll-target="#using-environmental-variables-1"><span class="header-section-number">8.2</span> Using Environmental Variables</a></li>
+  <li><a href="#using-docker-compose-1" id="toc-using-docker-compose-1" class="nav-link" data-scroll-target="#using-docker-compose-1"><span class="header-section-number">8.3</span> Using Docker Compose</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -157,7 +173,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">When you’ve learn programming on Excel/SQL and it shows</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Securely accessing a remote development machine with SSH</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
 </div>
 
 
@@ -168,7 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 29, 2023</p>
+      <p class="date">January 2, 2024</p>
     </div>
   </div>
   
@@ -178,35 +194,138 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="a-sneaking-suspicion" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> A Sneaking Suspicion</h1>
-<p>I’ve mostly completed my first ever python CLI-app for automatically extracting data in a particularly torturous .tsv format from a Microsoft SQL Server database. I say <em>mostly</em> because the database connection drops whenever I run it as anything other than a Jupyter notebook. Sufficed to say, it’s gotten me thinking a lot about how I think about programming.</p>
-<blockquote class="blockquote">
-<p>I’m under the constant suspicion that I’ve been doing things extremely inefficiently, but because I don’t know any better way- I’m left with only an unproven feeling.</p>
-</blockquote>
-<p>This is where many tutorials or help-articles fall flat: they help you solve the problem at hand, but fall flat when you start weaving those solutions together into a meaningful whole. The problem of creating an system from disparate parts is no easy-thing. And it’s gotten me extremely intrigued about what I believe the important problem to be: getting better at the <em>craft</em>, and I stand by my usage of the word<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-<p>Now, I certainly have no-one to answer to with this script. It’s about ~700 lines of python code acting as a wrapper for ~4,000 lines of legacy-SQL that some poor analyst had to run manually while changing the variables.</p>
-<p>What may be alarming to any developers reading this<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> is that I’ve done all of this with only one class declaration for the database connection. I understand that there is a paradigm known as “<a href="https://github.com/readme/guides/functional-programming-basics">Functional Programming</a>” which doesn’t seem to use classes(?) however, I’ve never done a code-review with anyone who has “Developer” in their title, so I’m left to guess as to whether that is alarming or not. Or even whether my code is intelligible or not.</p>
-<p>The databricks notebooks run, the 5 gig-large dashboards refresh every hour, and I move onto hunting the next analytical-turkey to feather another executive’s cap. But every now-and-then, I’ll see the a class declaration made in Scala and I’ll pause for a moment- wondering what life would be like if I actually knew how to use classes properly?</p>
+<section id="placing-docker-containers-behind-a-vpn" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Placing Docker Containers behind a VPN</h1>
+<p>https://eric-pierce.com/placing-select-docker-containers-behind-a-vpn/</p>
 </section>
-<section id="okay-but-classes-arent-complicated---do-you-have-brain-damage-or-something" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Okay, but classes aren’t complicated - do you have brain damage or something?</h1>
-<p>I think</p>
-<p>I feel as though there’s a specific kind of mental-block that occurs in people who learned programming through Excel as I have. And that’s largely evinced through my complete confusion whenever I see a <code>class</code> declaration.</p>
+<section id="making-your-own-ssh-public-key" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Making your own ssh public key</h1>
+<p>https://linuxhandbook.com/ssh-basics/</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {bash} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>ssh-keygen</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Creates both your public &amp; private KEY, however, when we execute <code>ssh lynma01@[remote_host]</code>, we’ll see an error about a man-in-the-middle attack. This is because we haven’t added the remote-hosts’ public key into the file <code>~/.ssh/known_hosts</code>.</p>
+</section>
+<section id="adding-the-remote-hosts-public-key" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Adding the remote hosts public key</h1>
+<p>https://www.baeldung.com/linux/public-key-known_hosts</p>
+<p>Adding the remote-hosts’ is as simple as:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource {bash} number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>ssh-keyscan &gt;&gt; ~/.ssh/known_hosts</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Once that command has completed, you’ll be able to login to the remote machine using <code>ssh $USER_NAME@$REMOTE_DOMAIN</code>. You will be prompted to input the user’s password.</p>
+</section>
+<section id="linuxs-network-management-cli-nmcli" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Linux’s Network Management CLI: <code>nmcli</code></h1>
+<p>https://www.howtogeek.com/devops/how-to-manage-linux-network-connections-from-the-command-line/</p>
+</section>
+<section id="running-docker-containers-from-there" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Running docker containers from there</h1>
+<section id="installing-docker" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="installing-docker"><span class="header-section-number">5.1</span> Installing Docker</h2>
+<p>https://docs.docker.com/compose/migrate/ https://docs.docker.com/compose/install/linux/ - which requires: https://docs.docker.com/engine/install/ubuntu</p>
+</section>
+<section id="using-environmental-variables" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="using-environmental-variables"><span class="header-section-number">5.2</span> Using Environmental Variables</h2>
+<p>https://docs.docker.com/compose/environment-variables/</p>
+</section>
+<section id="using-docker-compose" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="using-docker-compose"><span class="header-section-number">5.3</span> Using Docker Compose</h2>
+<p>https://docs.docker.com/compose/gettingstarted/</p>
+<pre><code># compose.yml
+services:
+    web:
+        build: .</code></pre>
+<p>^When specifying <code>build: .</code>, that tells the <code>web</code> service to use the Dockerfile in the current directory as the “image”.</p>
+<pre><code># Dockerfile
+</code></pre>
+<pre><code>Sets the 
 
 
-<!-- -->
 
+
+
+:::{#quarto-navigation-envelope .hidden}
+[lynma01.github.io]{.hidden render-id="quarto-int-sidebar-title"}
+[lynma01.github.io]{.hidden render-id="quarto-int-navbar-title"}
+[Home]{.hidden render-id="quarto-int-navbar:Home"}
+[/posts/home.html]{.hidden render-id="quarto-int-navbar:/posts/home.html"}
+:::
+
+
+
+:::{#quarto-meta-markdown .hidden}
+[lynma01.github.io - Securely accessing a remote development machine with SSH]{.hidden render-id="quarto-metatitle"}
+[lynma01.github.io - Securely accessing a remote development machine with SSH]{.hidden render-id="quarto-twittercardtitle"}
+[lynma01.github.io - Securely accessing a remote development machine with SSH]{.hidden render-id="quarto-ogcardtitle"}
+[lynma01.github.io]{.hidden render-id="quarto-metasitename"}
+[]{.hidden render-id="quarto-twittercarddesc"}
+[]{.hidden render-id="quarto-ogcardddesc"}
+:::
+
+
+
+
+&lt;!-- --&gt;
+
+::: {.quarto-embedded-source-code}
+```````````````````{.markdown shortcodes="false"}
+---
+title: "Securely accessing a remote development machine with SSH"
+date: "2024-01-02"
+filters:
+   - nutshell
+
+draft: true
+---
+
+# Placing Docker Containers behind a VPN
+https://eric-pierce.com/placing-select-docker-containers-behind-a-vpn/
+
+
+# Making your own ssh public key
+https://linuxhandbook.com/ssh-basics/
+
+quarto-executable-code-5450563D
+
+```bash
+ssh-keygen</code></pre>
+<p>Creates both your public &amp; private KEY, however, when we execute <code>ssh lynma01@[remote_host]</code>, we’ll see an error about a man-in-the-middle attack. This is because we haven’t added the remote-hosts’ public key into the file <code>~/.ssh/known_hosts</code>.</p>
+</section>
+</section>
+<section id="adding-the-remote-hosts-public-key-1" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Adding the remote hosts public key</h1>
+<p>https://www.baeldung.com/linux/public-key-known_hosts</p>
+<p>Adding the remote-hosts’ is as simple as: quarto-executable-code-5450563D</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">ssh-keyscan</span> <span class="op">&gt;&gt;</span> ~/.ssh/known_hosts</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Once that command has completed, you’ll be able to login to the remote machine using <code>ssh $USER_NAME@$REMOTE_DOMAIN</code>. You will be prompted to input the user’s password.</p>
+</section>
+<section id="linuxs-network-management-cli-nmcli-1" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Linux’s Network Management CLI: <code>nmcli</code></h1>
+<p>https://www.howtogeek.com/devops/how-to-manage-linux-network-connections-from-the-command-line/</p>
+</section>
+<section id="running-docker-containers-from-there-1" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Running docker containers from there</h1>
+<section id="installing-docker-1" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="installing-docker-1"><span class="header-section-number">8.1</span> Installing Docker</h2>
+<p>https://docs.docker.com/compose/migrate/ https://docs.docker.com/compose/install/linux/ - which requires: https://docs.docker.com/engine/install/ubuntu</p>
+</section>
+<section id="using-environmental-variables-1" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="using-environmental-variables-1"><span class="header-section-number">8.2</span> Using Environmental Variables</h2>
+<p>https://docs.docker.com/compose/environment-variables/</p>
+</section>
+<section id="using-docker-compose-1" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="using-docker-compose-1"><span class="header-section-number">8.3</span> Using Docker Compose</h2>
+<p>https://docs.docker.com/compose/gettingstarted/</p>
+<pre><code># compose.yml
+services:
+    web:
+        build: .</code></pre>
+<p>^When specifying <code>build: .</code>, that tells the <code>web</code> service to use the Dockerfile in the current directory as the “image”.</p>
+<pre><code># Dockerfile
+</code></pre>
+<pre><code>Sets the </code></pre>
+<p>:::</p>
+</section>
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Programming is inherently practical, and while this is unintuitive[^what_is_unintuitive] for the many people who don’t write code for a living, <a href="https://www.goodreads.com/quotes/6341736-any-fool-can-write-code-that-a-computer-can-understand">the bare-minimum is to have the program compile</a>. However, for those of us who do write code, hell, even those of who deal with really complicated spreadsheets or PowerBI reports for a living, there exists an “elegance” within any solution; or a solution created with/in “<a href="https://github.com/mkirchner/linked-list-good-taste">good taste</a>”. I call “solutions-with-elegance” a <em>craft</em>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>assuming that anyone does, <em>ha</em>!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -605,47 +724,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "When you've learn programming on Excel/SQL and it shows"</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="an">date:</span><span class="co"> "2023-12-29"</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="an">filters:</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="co">   - nutshell</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a></span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="an">draft:</span><span class="co"> true</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="co">---</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="fu"># A Sneaking Suspicion</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a>I've mostly completed my first ever python CLI-app for automatically extracting data in a particularly torturous .tsv format from a Microsoft SQL Server database. I say *mostly* because the database connection drops whenever I run it as anything other than a Jupyter notebook. Sufficed to say, it's gotten me thinking a lot about how I think about programming. </span>
-<span id="cb1-12"><a href="#cb1-12"></a></span>
-<span id="cb1-13"><a href="#cb1-13"></a><span class="at">&gt; I'm under the constant suspicion that I've been doing things extremely inefficiently, but because I don't know any better way- I'm left with only an unproven feeling.</span>  </span>
-<span id="cb1-14"><a href="#cb1-14"></a></span>
-<span id="cb1-15"><a href="#cb1-15"></a>This is where many tutorials or help-articles fall flat: they help you solve the problem at hand, but fall flat when you start weaving those solutions together into a meaningful whole. The problem of creating an system from disparate parts is no easy-thing. And it's gotten me extremely intrigued about what I believe the important problem to be: getting better at the *craft*, and I stand by my usage of the word<span class="ot">[^what_is_craft]</span>.</span>
-<span id="cb1-16"><a href="#cb1-16"></a></span>
-<span id="cb1-17"><a href="#cb1-17"></a>Now, I certainly have no-one to answer to with this script. It's about ~700 lines of python code acting as a wrapper for ~4,000 lines of legacy-SQL that some poor analyst had to run manually while changing the variables.</span>
-<span id="cb1-18"><a href="#cb1-18"></a></span>
-<span id="cb1-19"><a href="#cb1-19"></a>What may be alarming to any developers reading this<span class="ot">[^ha]</span> is that I've done all of this with only one class declaration for the database connection. I understand that there is a paradigm known as "<span class="co">[</span><span class="ot">Functional Programming</span><span class="co">](https://github.com/readme/guides/functional-programming-basics)</span>" which doesn't seem to use classes(?) however,  I've never done a code-review with anyone who has "Developer" in their title, so I'm left to guess as to whether that is alarming or not. Or even whether my code is intelligible or not.</span>
-<span id="cb1-20"><a href="#cb1-20"></a></span>
-<span id="cb1-21"><a href="#cb1-21"></a></span>
-<span id="cb1-22"><a href="#cb1-22"></a></span>
-<span id="cb1-23"><a href="#cb1-23"></a>The databricks notebooks run, the 5 gig-large dashboards refresh every hour, and I move onto hunting the next analytical-turkey to feather another executive's cap. But every now-and-then, I'll see the a class declaration made in Scala and I'll pause for a moment- wondering what life would be like if I actually knew how to use classes properly?</span>
-<span id="cb1-24"><a href="#cb1-24"></a></span>
-<span id="cb1-25"><a href="#cb1-25"></a><span class="fu"># Okay, but classes aren't complicated - do you have brain damage or something?</span></span>
-<span id="cb1-26"><a href="#cb1-26"></a>I think </span>
-<span id="cb1-27"><a href="#cb1-27"></a></span>
-<span id="cb1-28"><a href="#cb1-28"></a></span>
-<span id="cb1-29"><a href="#cb1-29"></a>I feel as though there's a specific kind of mental-block that occurs in people who learned programming through Excel as I have. And that's largely evinced through my complete confusion whenever I see a <span class="in">`class`</span> declaration. </span>
-<span id="cb1-30"><a href="#cb1-30"></a></span>
-<span id="cb1-31"><a href="#cb1-31"></a></span>
-<span id="cb1-32"><a href="#cb1-32"></a></span>
-<span id="cb1-33"><a href="#cb1-33"></a><span class="ot">[^what_is_craft]: </span>Programming is inherently practical, and while this is unintuitive<span class="ot">[^what_is_unintuitive]</span> for the many people who don't write code for a living, <span class="co">[</span><span class="ot">the bare-minimum is to have the program compile</span><span class="co">](https://www.goodreads.com/quotes/6341736-any-fool-can-write-code-that-a-computer-can-understand)</span>. However, for those of us who do write code, hell, even those of who deal with really complicated spreadsheets or PowerBI reports for a living, there exists an "elegance" within any solution; or a solution created with/in "<span class="co">[</span><span class="ot">good taste</span><span class="co">](https://github.com/mkirchner/linked-list-good-taste)</span>". I call "solutions-with-elegance" a *craft*.</span>
-<span id="cb1-34"><a href="#cb1-34"></a></span>
-<span id="cb1-35"><a href="#cb1-35"></a><span class="ot">[^ha]: </span>assuming that anyone does, *ha*!</span>
-<span id="cb1-36"><a href="#cb1-36"></a></span>
-<span id="cb1-37"><a href="#cb1-37"></a><span class="ot">[^managers_standards]: </span>In the US at least, everyone's first instinct on LinkedIn is to refer to them selves as an *engineer* of some-sort to negotiate a higher salary. But while people with technical skills may abound (cough, cough), there seems to be an enormous deficit when it comes to managers who insist on code-quality standards which improve the overall experience for their employees.</span>
-<span id="cb1-38"><a href="#cb1-38"></a></span>
-<span id="cb1-39"><a href="#cb1-39"></a><span class="ot">[^what_is_unintuitive]: </span>My general litmus test for "intuitive-ness" comes from conversations with my 76 year-old grandfather. I would include my grandmother in that criteria, however, she prefers vastly different conversational topics and I do my best to respect her wishes in all cases.  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</script>
 </div> <!-- /content -->
 
 

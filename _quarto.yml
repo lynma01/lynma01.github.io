@@ -11,7 +11,7 @@ website:
     type: textbox
   navbar:
     left:
-      - href: posts/lynma01.github.io.qmd
+      - href: posts/home.qmd
         text: Home
   twitter-card: true
   open-graph:

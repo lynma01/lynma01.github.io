@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-01-07">
+
+<title>lynma01.github.io - Shilling for Elixir</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/nutshell-1.0.0/nutshell.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<meta property="og:title" content="lynma01.github.io - Shilling for Elixir">
+<meta property="og:description" content="">
+<meta property="og:image" content="home_images/acrdb.svg">
+<meta property="og:site-name" content="lynma01.github.io">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:title" content="lynma01.github.io - Shilling for Elixir">
+<meta name="twitter:description" content="">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">lynma01.github.io</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/home.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#functional-programming-is-the-best-paradigm-for-my-lobotomized-lifestyle" id="toc-functional-programming-is-the-best-paradigm-for-my-lobotomized-lifestyle" class="nav-link active" data-scroll-target="#functional-programming-is-the-best-paradigm-for-my-lobotomized-lifestyle"><span class="header-section-number">1</span> Functional Programming is the best paradigm for my lobotomized lifestyle</a>
+  <ul class="collapse">
+  <li><a href="#case-statements" id="toc-case-statements" class="nav-link" data-scroll-target="#case-statements"><span class="header-section-number">1.1</span> Case statements</a></li>
+  <li><a href="#pattern-matching" id="toc-pattern-matching" class="nav-link" data-scroll-target="#pattern-matching"><span class="header-section-number">1.2</span> Pattern matching</a></li>
+  <li><a href="#elixir-agents" id="toc-elixir-agents" class="nav-link" data-scroll-target="#elixir-agents"><span class="header-section-number">1.3</span> Elixir Agents</a>
+  <ul class="collapse">
+  <li><a href="#how-long-do-processes-live" id="toc-how-long-do-processes-live" class="nav-link" data-scroll-target="#how-long-do-processes-live"><span class="header-section-number">1.3.1</span> How long do processes live?</a></li>
+  </ul></li>
+  <li><a href="#modules" id="toc-modules" class="nav-link" data-scroll-target="#modules"><span class="header-section-number">1.4</span> Modules</a>
+  <ul class="collapse">
+  <li><a href="#some-notes-about-the-agent-module" id="toc-some-notes-about-the-agent-module" class="nav-link" data-scroll-target="#some-notes-about-the-agent-module"><span class="header-section-number">1.4.1</span> Some notes about the <code>Agent</code> module:</a></li>
+  </ul></li>
+  <li><a href="#structs" id="toc-structs" class="nav-link" data-scroll-target="#structs"><span class="header-section-number">1.5</span> Structs</a></li>
+  <li><a href="#protocols---extending-datatypes-with-defimpl" id="toc-protocols---extending-datatypes-with-defimpl" class="nav-link" data-scroll-target="#protocols---extending-datatypes-with-defimpl"><span class="header-section-number">1.6</span> Protocols - extending datatypes with <code>defimpl</code></a></li>
+  <li><a href="#elixir-nodes" id="toc-elixir-nodes" class="nav-link" data-scroll-target="#elixir-nodes"><span class="header-section-number">1.7</span> Elixir <code>Node</code>s</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Shilling for Elixir</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 7, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="functional-programming-is-the-best-paradigm-for-my-lobotomized-lifestyle" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Functional Programming is the best paradigm for my lobotomized lifestyle</h1>
+<p>Links: - https://elixirschool.com/en/lessons/ - https://elixir-lang.org/docs.html - https://www.syncfusion.com/succinctly-free-ebooks/elixir-succinctly -</p>
+<section id="case-statements" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="case-statements"><span class="header-section-number">1.1</span> Case statements</h2>
+<p>Kind of like enum matching within functions</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>case Data.fromiso8601(input) do</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    {:ok, date} -&gt; # because most functions return a tuple, we're able to easily create control-flows</span>
+<span id="cb1-3"><a href="#cb1-3"></a>        "We got a valid date: #{inspect(date)}"</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>    {:error, reason} -&gt; # however, the tricky bit is that the return values are function-specific</span>
+<span id="cb1-6"><a href="#cb1-6"></a>        "Oh no, the date is invalid. Reason: #{inpsect(reason)}"</span>
+<span id="cb1-7"><a href="#cb1-7"></a>end</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The basic format is <code>case... do... -&gt; end</code></p>
+</section>
+<section id="pattern-matching" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="pattern-matching"><span class="header-section-number">1.2</span> Pattern matching</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a># This is the data we're looking to match from</span>
+<span id="cb2-2"><a href="#cb2-2"></a>map = %{:elixir =&gt; :functional, :python =&gt; :object_oriented}</span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a># The value we're specifying as the search pattern goes in the left</span>
+<span id="cb2-5"><a href="#cb2-5"></a># But notice how there's now a new variable `type` which holds the result</span>
+<span id="cb2-6"><a href="#cb2-6"></a>%{:elixir =&gt; type} = map # &lt;- Notice how the item we're inspecting goes in the right-hand side</span>
+<span id="cb2-7"><a href="#cb2-7"></a></span>
+<span id="cb2-8"><a href="#cb2-8"></a>type</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="elixir-agents" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="elixir-agents"><span class="header-section-number">1.3</span> Elixir Agents</h2>
+<p><code>Agent</code>s, <code>Task</code>s, and <code>genserver</code>s are all “<a href="https://hexdocs.pm/elixir/1.16.0/processes.html">processes</a>” spawned by Elixir’s process management system. Processes will always return the Process-Identifier (PID) whenever initialized and pattern-matched like so:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>{:ok, agent} = Agent.start_link(fn -&gt; [] end) # Agent that returns an empty list</span>
+<span id="cb3-2"><a href="#cb3-2"></a># returns: {:ok, #PID&lt;0.166.0&gt;}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>But were we to <code>get</code>, or <code>update</code> the <code>Agent</code>, it would return the list we’re expecting from the anonymous function:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1"></a>Agent.get(agent, fn list -&gt; list end)</span>
+<span id="cb4-2"><a href="#cb4-2"></a># returns: []</span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a>Agent.update(agent, fn list -&gt; [0 | list] end)</span>
+<span id="cb4-5"><a href="#cb4-5"></a>Agent.get(agent, fn list -&gt; list end)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="how-long-do-processes-live" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="how-long-do-processes-live"><span class="header-section-number">1.3.1</span> How long do processes live?</h3>
+<p>Note that any <code>process</code> only lives as long as it takes to complete its function. Once complete, the <code>process</code> automatically closes itself:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a href="#cb5-1"></a>pid = spawn(fn -&gt; 1 + 2 end)</span>
+<span id="cb5-2"><a href="#cb5-2"></a># returns #PIX&lt;0.44.0&gt;</span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a>Process.alive?(pid)</span>
+<span id="cb5-5"><a href="#cb5-5"></a># returns false</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="modules" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="modules"><span class="header-section-number">1.4</span> Modules</h2>
+<p>Modules are a method of organizing <code>function</code> or <code>struct</code> definitions. Likewise, modules can extend themselves with other modeuls as we see below with <code>Portal.Door</code> extending the <code>Portal</code> module:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a href="#cb6-1"></a>defmodule Portal.Door do</span>
+<span id="cb6-2"><a href="#cb6-2"></a>  use Agent # This is a namespace statement, "bringing some `Agent`-related functionality into the module."</span>
+<span id="cb6-3"><a href="#cb6-3"></a></span>
+<span id="cb6-4"><a href="#cb6-4"></a>  # This creates the portal-door</span>
+<span id="cb6-5"><a href="#cb6-5"></a>  def start_link(color) when is_atom(color) do # `when` is a guard statement, only executing when specified</span>
+<span id="cb6-6"><a href="#cb6-6"></a>    Agent.start_link(fn -&gt; [] end, name: color) # https://hexdocs.pm/elixir/1.16.0/Agent.html#start_link/2</span>
+<span id="cb6-7"><a href="#cb6-7"></a>  end</span>
+<span id="cb6-8"><a href="#cb6-8"></a></span>
+<span id="cb6-9"><a href="#cb6-9"></a>  def get(door) do # This gets the portal-door, returning its contents</span>
+<span id="cb6-10"><a href="#cb6-10"></a>    Agent.get(door, fn list -&gt; list end)</span>
+<span id="cb6-11"><a href="#cb6-11"></a>  end</span>
+<span id="cb6-12"><a href="#cb6-12"></a></span>
+<span id="cb6-13"><a href="#cb6-13"></a>  def push(door, value) do # This updates the portal door to include the portal's list</span>
+<span id="cb6-14"><a href="#cb6-14"></a>    Agent.update(door, fn list -&gt; [value | list] end)</span>
+<span id="cb6-15"><a href="#cb6-15"></a>  end</span>
+<span id="cb6-16"><a href="#cb6-16"></a></span>
+<span id="cb6-17"><a href="#cb6-17"></a>  def pop(door) do # Given some door with its list, add a tuple to the list?</span>
+<span id="cb6-18"><a href="#cb6-18"></a>    Agent.get_and_update(door, fn list -&gt;</span>
+<span id="cb6-19"><a href="#cb6-19"></a>      case list do</span>
+<span id="cb6-20"><a href="#cb6-20"></a>        # The normal case - when the list has a head &amp; tail, return two tuples</span>
+<span id="cb6-21"><a href="#cb6-21"></a>        [h | t] -&gt; {{:ok, h}, t} # but then removes the head?</span>
+<span id="cb6-22"><a href="#cb6-22"></a></span>
+<span id="cb6-23"><a href="#cb6-23"></a>        # Error case, return a tuple with `:error` and an empty list</span>
+<span id="cb6-24"><a href="#cb6-24"></a>        [] -&gt; {:error, []}</span>
+<span id="cb6-25"><a href="#cb6-25"></a>      end</span>
+<span id="cb6-26"><a href="#cb6-26"></a>    end)</span>
+<span id="cb6-27"><a href="#cb6-27"></a>  end</span>
+<span id="cb6-28"><a href="#cb6-28"></a></span>
+<span id="cb6-29"><a href="#cb6-29"></a>  def stop(door) do </span>
+<span id="cb6-30"><a href="#cb6-30"></a>    Agent.stop(door) # I'm assuming this stops the `door` process, effectively killing the portal</span>
+<span id="cb6-31"><a href="#cb6-31"></a>  end</span>
+<span id="cb6-32"><a href="#cb6-32"></a>end</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And then <code>Portal</code></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb7-1"><a href="#cb7-1"></a>defmodule Portal do</span>
+<span id="cb7-2"><a href="#cb7-2"></a>  defstruct [:left, :right]</span>
+<span id="cb7-3"><a href="#cb7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4"></a>  def shoot(color) do # `Potal` invokes `Portal.Door` without requiring a `use` statement?</span>
+<span id="cb7-5"><a href="#cb7-5"></a>    Portal.Door.start_link(color)</span>
+<span id="cb7-6"><a href="#cb7-6"></a>  end</span>
+<span id="cb7-7"><a href="#cb7-7"></a></span>
+<span id="cb7-8"><a href="#cb7-8"></a>  def transfer(left_door, right_door, data) do</span>
+<span id="cb7-9"><a href="#cb7-9"></a>    # First add all data to the portal on the left</span>
+<span id="cb7-10"><a href="#cb7-10"></a>    for item &lt;- data do # wait, so Elixir does have for loops?</span>
+<span id="cb7-11"><a href="#cb7-11"></a>      Portal.Door.push(left_door, item)</span>
+<span id="cb7-12"><a href="#cb7-12"></a>    end</span>
+<span id="cb7-13"><a href="#cb7-13"></a></span>
+<span id="cb7-14"><a href="#cb7-14"></a>    # Returns a portal struct with the doors</span>
+<span id="cb7-15"><a href="#cb7-15"></a>    %Portal{left: left_door, right: right_door}</span>
+<span id="cb7-16"><a href="#cb7-16"></a>  end</span>
+<span id="cb7-17"><a href="#cb7-17"></a></span>
+<span id="cb7-18"><a href="#cb7-18"></a>  def push_right(portal) do</span>
+<span id="cb7-19"><a href="#cb7-19"></a>    # See if we can pop data from left. If so, push the</span>
+<span id="cb7-20"><a href="#cb7-20"></a>    # popped data to the right. Otherwise, do nothing.</span>
+<span id="cb7-21"><a href="#cb7-21"></a>    case Portal.Door.pop(portal.left) do</span>
+<span id="cb7-22"><a href="#cb7-22"></a>      :error   -&gt; :ok</span>
+<span id="cb7-23"><a href="#cb7-23"></a>      {:ok, h} -&gt; Portal.Door.push(portal.right, h)</span>
+<span id="cb7-24"><a href="#cb7-24"></a>    end</span>
+<span id="cb7-25"><a href="#cb7-25"></a></span>
+<span id="cb7-26"><a href="#cb7-26"></a>    # Let's return the portal itself</span>
+<span id="cb7-27"><a href="#cb7-27"></a>    portal</span>
+<span id="cb7-28"><a href="#cb7-28"></a>  end</span>
+<span id="cb7-29"><a href="#cb7-29"></a></span>
+<span id="cb7-30"><a href="#cb7-30"></a>  def close(portal) do # so each `Portal.Door` is an `Agent` which is killed with the `.stop` function. </span>
+<span id="cb7-31"><a href="#cb7-31"></a>    Portal.Door.stop(portal.left) # and each `Portal.Door` requires its own `.stop`, because they're separate</span>
+<span id="cb7-32"><a href="#cb7-32"></a>    Portal.Door.stop(portal.right)</span>
+<span id="cb7-33"><a href="#cb7-33"></a>    :ok</span>
+<span id="cb7-34"><a href="#cb7-34"></a>  end</span>
+<span id="cb7-35"><a href="#cb7-35"></a>end</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="some-notes-about-the-agent-module" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="some-notes-about-the-agent-module"><span class="header-section-number">1.4.1</span> Some notes about the <code>Agent</code> module:</h3>
+<ul>
+<li><p>an <code>Agent</code> is just another type of process in Elixir. Likewise, they can be <code>[spawn_link](https://hexdocs.pm/elixir/1.16.0/Kernel.html#spawn_link/1)</code>ed together,</p></li>
+<li><p>Starting the same <code>Agent</code> twice will return an <code>{:error, {:already_started, #PID&lt;0.205.0}}</code>. This tells me that Elixir is intelligent about 1: comprehending what process you’re referring to, and 2: ensuring processes can’t be overwritten.</p></li>
+</ul>
+</section>
+</section>
+<section id="structs" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="structs"><span class="header-section-number">1.5</span> Structs</h2>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a href="#cb8-1"></a>defmodule User do # Defines a module, nothing we haven't seen before</span>
+<span id="cb8-2"><a href="#cb8-2"></a>  defstruct [:name, :age] # This defines the data which a `User` can contain?</span>
+<span id="cb8-3"><a href="#cb8-3"></a>end</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>However, when referring to module-<code>struct</code>s like the one above, the syntax is specific:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a href="#cb9-1"></a>user = %User{name: "john doe", age: 27}</span>
+<span id="cb9-2"><a href="#cb9-2"></a></span>
+<span id="cb9-3"><a href="#cb9-3"></a># Fields can be accessed with dot-notation</span>
+<span id="cb9-4"><a href="#cb9-4"></a>user.name # returns: "john does"</span>
+<span id="cb9-5"><a href="#cb9-5"></a></span>
+<span id="cb9-6"><a href="#cb9-6"></a># Pattern matching example:</span>
+<span id="cb9-7"><a href="#cb9-7"></a>%User{age: age} = user</span>
+<span id="cb9-8"><a href="#cb9-8"></a>age # returns: 27</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="protocols---extending-datatypes-with-defimpl" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="protocols---extending-datatypes-with-defimpl"><span class="header-section-number">1.6</span> Protocols - extending datatypes with <code>defimpl</code></h2>
+<p>Protocols allow us to define ways for other code to make use of our own code. In this case, we’re teaching the <code>inspect</code> function, which is part of the Elixir kernel, how to print a representation of our <code>Portal</code> struct within the CLI. In this case, we’re just trying to make the module more user friendly.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a href="#cb10-1"></a>defimpl Inspect, for: Portal do</span>
+<span id="cb10-2"><a href="#cb10-2"></a>  def inspect(%Portal{left: left, right: right}, _) do</span>
+<span id="cb10-3"><a href="#cb10-3"></a>    left_door  = inspect(left)</span>
+<span id="cb10-4"><a href="#cb10-4"></a>    right_door = inspect(right)</span>
+<span id="cb10-5"><a href="#cb10-5"></a></span>
+<span id="cb10-6"><a href="#cb10-6"></a>    left_data  = inspect(Enum.reverse(Portal.Door.get(left)))</span>
+<span id="cb10-7"><a href="#cb10-7"></a>    right_data = inspect(Portal.Door.get(right))</span>
+<span id="cb10-8"><a href="#cb10-8"></a></span>
+<span id="cb10-9"><a href="#cb10-9"></a>    max = max(String.length(left_door), String.length(left_data))</span>
+<span id="cb10-10"><a href="#cb10-10"></a></span>
+<span id="cb10-11"><a href="#cb10-11"></a>    """</span>
+<span id="cb10-12"><a href="#cb10-12"></a>    #Portal&lt;</span>
+<span id="cb10-13"><a href="#cb10-13"></a>      #{String.pad_leading(left_door, max)} &lt;=&gt; #{right_door}</span>
+<span id="cb10-14"><a href="#cb10-14"></a>      #{String.pad_leading(left_data, max)} &lt;=&gt; #{right_data}</span>
+<span id="cb10-15"><a href="#cb10-15"></a>    &gt;\</span>
+<span id="cb10-16"><a href="#cb10-16"></a>    """</span>
+<span id="cb10-17"><a href="#cb10-17"></a>  end</span>
+<span id="cb10-18"><a href="#cb10-18"></a>end</span>
+<span id="cb10-19"><a href="#cb10-19"></a></span>
+<span id="cb10-20"><a href="#cb10-20"></a># And what we get as a result:</span>
+<span id="cb10-21"><a href="#cb10-21"></a># Portal&lt;</span>
+<span id="cb10-22"><a href="#cb10-22"></a>#        :red &lt;=&gt; :purple</span>
+<span id="cb10-23"><a href="#cb10-23"></a>#   [1, 2, 3] &lt;=&gt; []</span>
+<span id="cb10-24"><a href="#cb10-24"></a># &gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="elixir-nodes" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="elixir-nodes"><span class="header-section-number">1.7</span> Elixir <code>Node</code>s</h2>
+<p>A <code>node</code> is a container for processes within a different server. One connects to <code>node</code>s as follows:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a href="#cb11-1"></a>IO.inspect node()</span>
+<span id="cb11-2"><a href="#cb11-2"></a>IO.inspect Node.get_cookie()</span>
+<span id="cb11-3"><a href="#cb11-3"></a>:ok</span>
+<span id="cb11-4"><a href="#cb11-4"></a></span>
+<span id="cb11-5"><a href="#cb11-5"></a>other_node = :"jsmq4atl-livebook_server@6aebae17b1d7" # this is the name of the other node</span>
+<span id="cb11-6"><a href="#cb11-6"></a>other_cookie = :qHQdK1mN33nxFKM7YAZVBqO8NX4TXhS6 # this is a security-key, I don't understand how it works</span>
+<span id="cb11-7"><a href="#cb11-7"></a></span>
+<span id="cb11-8"><a href="#cb11-8"></a>Node.set_cookie(other_node, other_cookie)</span>
+<span id="cb11-9"><a href="#cb11-9"></a>Node.connect(other_node)</span>
+<span id="cb11-10"><a href="#cb11-10"></a></span>
+<span id="cb11-11"><a href="#cb11-11"></a># `other_node` is now the varaible which accesses the connection</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This is interesting because we’re now able to transfer and transform data across nodes.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource {elixir} number-lines code-with-copy"><code class="sourceCode"><span id="cb12-1"><a href="#cb12-1"></a># &gt; So far, we have been using atoms to represent doors, such as :blue, but we can also use the {name, node} notation to refer to a process in another node. Let's give it a try:</span>
+<span id="cb12-2"><a href="#cb12-2"></a></span>
+<span id="cb12-3"><a href="#cb12-3"></a>blue = {:blue, other_node}</span>
+<span id="cb12-4"><a href="#cb12-4"></a>Portal.Door.get(blue)</span>
+<span id="cb12-5"><a href="#cb12-5"></a></span>
+<span id="cb12-6"><a href="#cb12-6"></a>Portal.shoot(:yellow)</span>
+<span id="cb12-7"><a href="#cb12-7"></a>yellow = {:yellow, node()}</span>
+<span id="cb12-8"><a href="#cb12-8"></a>portal = Portal.transfer(yellow, blue, [1, 2, 3, 4])</span>
+<span id="cb12-9"><a href="#cb12-9"></a></span>
+<span id="cb12-10"><a href="#cb12-10"></a># #Portal&lt;</span>
+<span id="cb12-11"><a href="#cb12-11"></a>#  {:yellow, :"nv5thk4p-livebook_server@6aebae17b1d7"} &lt;=&gt; {:blue, :"jsmq4atl-livebook_server@6aebae17b1d7"}</span>
+<span id="cb12-12"><a href="#cb12-12"></a>#                                         [1, 2, 3, 4] &lt;=&gt; []</span>
+<span id="cb12-13"><a href="#cb12-13"></a># &gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>So, you can pass a <code>node</code> within a tuple as a function argument</p>
+
+
+<!-- -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb13" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">---</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="an">title:</span><span class="co"> "Shilling for Elixir"</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="an">date:</span><span class="co"> "2024-01-07"</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a><span class="an">filters:</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a><span class="co">   - nutshell</span></span>
+<span id="cb13-6"><a href="#cb13-6"></a></span>
+<span id="cb13-7"><a href="#cb13-7"></a><span class="an">draft:</span><span class="co"> true</span></span>
+<span id="cb13-8"><a href="#cb13-8"></a><span class="co">---</span></span>
+<span id="cb13-9"><a href="#cb13-9"></a></span>
+<span id="cb13-10"><a href="#cb13-10"></a><span class="fu"># Functional Programming is the best paradigm for my lobotomized lifestyle</span></span>
+<span id="cb13-11"><a href="#cb13-11"></a></span>
+<span id="cb13-12"><a href="#cb13-12"></a>Links:</span>
+<span id="cb13-13"><a href="#cb13-13"></a><span class="ss">- </span>https://elixirschool.com/en/lessons/</span>
+<span id="cb13-14"><a href="#cb13-14"></a><span class="ss">- </span>https://elixir-lang.org/docs.html</span>
+<span id="cb13-15"><a href="#cb13-15"></a><span class="ss">- </span>https://www.syncfusion.com/succinctly-free-ebooks/elixir-succinctly</span>
+<span id="cb13-16"><a href="#cb13-16"></a><span class="ss">- </span></span>
+<span id="cb13-17"><a href="#cb13-17"></a></span>
+<span id="cb13-18"><a href="#cb13-18"></a><span class="fu">## Case statements</span></span>
+<span id="cb13-19"><a href="#cb13-19"></a>Kind of like enum matching within functions</span>
+<span id="cb13-22"><a href="#cb13-22"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-23"><a href="#cb13-23"></a><span class="in">case Data.fromiso8601(input) do</span></span>
+<span id="cb13-24"><a href="#cb13-24"></a><span class="in">    {:ok, date} -&gt; # because most functions return a tuple, we're able to easily create control-flows</span></span>
+<span id="cb13-25"><a href="#cb13-25"></a><span class="in">        "We got a valid date: #{inspect(date)}"</span></span>
+<span id="cb13-26"><a href="#cb13-26"></a></span>
+<span id="cb13-27"><a href="#cb13-27"></a><span class="in">    {:error, reason} -&gt; # however, the tricky bit is that the return values are function-specific</span></span>
+<span id="cb13-28"><a href="#cb13-28"></a><span class="in">        "Oh no, the date is invalid. Reason: #{inpsect(reason)}"</span></span>
+<span id="cb13-29"><a href="#cb13-29"></a><span class="in">end</span></span>
+<span id="cb13-30"><a href="#cb13-30"></a><span class="in">```</span></span>
+<span id="cb13-31"><a href="#cb13-31"></a></span>
+<span id="cb13-32"><a href="#cb13-32"></a>The basic format is <span class="in">`case... do... -&gt; end`</span></span>
+<span id="cb13-33"><a href="#cb13-33"></a></span>
+<span id="cb13-34"><a href="#cb13-34"></a><span class="fu">## Pattern matching</span></span>
+<span id="cb13-37"><a href="#cb13-37"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-38"><a href="#cb13-38"></a><span class="in"># This is the data we're looking to match from</span></span>
+<span id="cb13-39"><a href="#cb13-39"></a><span class="in">map = %{:elixir =&gt; :functional, :python =&gt; :object_oriented}</span></span>
+<span id="cb13-40"><a href="#cb13-40"></a></span>
+<span id="cb13-41"><a href="#cb13-41"></a><span class="in"># The value we're specifying as the search pattern goes in the left</span></span>
+<span id="cb13-42"><a href="#cb13-42"></a><span class="in"># But notice how there's now a new variable `type` which holds the result</span></span>
+<span id="cb13-43"><a href="#cb13-43"></a><span class="in">%{:elixir =&gt; type} = map # &lt;- Notice how the item we're inspecting goes in the right-hand side</span></span>
+<span id="cb13-44"><a href="#cb13-44"></a></span>
+<span id="cb13-45"><a href="#cb13-45"></a><span class="in">type</span></span>
+<span id="cb13-46"><a href="#cb13-46"></a><span class="in">```</span></span>
+<span id="cb13-47"><a href="#cb13-47"></a></span>
+<span id="cb13-48"><a href="#cb13-48"></a><span class="fu">## Elixir Agents</span></span>
+<span id="cb13-49"><a href="#cb13-49"></a><span class="in">`Agent`</span>s, <span class="in">`Task`</span>s, and <span class="in">`genserver`</span>s are all "<span class="co">[</span><span class="ot">processes</span><span class="co">](https://hexdocs.pm/elixir/1.16.0/processes.html)</span>" spawned by Elixir's process management system. Processes will always return the Process-Identifier (PID) whenever initialized and pattern-matched like so:</span>
+<span id="cb13-50"><a href="#cb13-50"></a></span>
+<span id="cb13-53"><a href="#cb13-53"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-54"><a href="#cb13-54"></a><span class="in">{:ok, agent} = Agent.start_link(fn -&gt; [] end) # Agent that returns an empty list</span></span>
+<span id="cb13-55"><a href="#cb13-55"></a><span class="in"># returns: {:ok, #PID&lt;0.166.0&gt;}</span></span>
+<span id="cb13-56"><a href="#cb13-56"></a><span class="in">```</span></span>
+<span id="cb13-57"><a href="#cb13-57"></a></span>
+<span id="cb13-58"><a href="#cb13-58"></a>But were we to <span class="in">`get`</span>, or <span class="in">`update`</span> the <span class="in">`Agent`</span>, it would return the list we're expecting from the anonymous function:</span>
+<span id="cb13-59"><a href="#cb13-59"></a></span>
+<span id="cb13-62"><a href="#cb13-62"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-63"><a href="#cb13-63"></a><span class="in">Agent.get(agent, fn list -&gt; list end)</span></span>
+<span id="cb13-64"><a href="#cb13-64"></a><span class="in"># returns: []</span></span>
+<span id="cb13-65"><a href="#cb13-65"></a></span>
+<span id="cb13-66"><a href="#cb13-66"></a><span class="in">Agent.update(agent, fn list -&gt; [0 | list] end)</span></span>
+<span id="cb13-67"><a href="#cb13-67"></a><span class="in">Agent.get(agent, fn list -&gt; list end)</span></span>
+<span id="cb13-68"><a href="#cb13-68"></a><span class="in">```</span></span>
+<span id="cb13-69"><a href="#cb13-69"></a></span>
+<span id="cb13-70"><a href="#cb13-70"></a><span class="fu">### How long do processes live?</span></span>
+<span id="cb13-71"><a href="#cb13-71"></a>Note that any <span class="in">`process`</span> only lives as long as it takes to complete its function. Once complete, the <span class="in">`process`</span> automatically closes itself:</span>
+<span id="cb13-72"><a href="#cb13-72"></a></span>
+<span id="cb13-75"><a href="#cb13-75"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-76"><a href="#cb13-76"></a><span class="in">pid = spawn(fn -&gt; 1 + 2 end)</span></span>
+<span id="cb13-77"><a href="#cb13-77"></a><span class="in"># returns #PIX&lt;0.44.0&gt;</span></span>
+<span id="cb13-78"><a href="#cb13-78"></a></span>
+<span id="cb13-79"><a href="#cb13-79"></a><span class="in">Process.alive?(pid)</span></span>
+<span id="cb13-80"><a href="#cb13-80"></a><span class="in"># returns false</span></span>
+<span id="cb13-81"><a href="#cb13-81"></a><span class="in">```</span></span>
+<span id="cb13-82"><a href="#cb13-82"></a></span>
+<span id="cb13-83"><a href="#cb13-83"></a><span class="fu">## Modules </span></span>
+<span id="cb13-84"><a href="#cb13-84"></a></span>
+<span id="cb13-85"><a href="#cb13-85"></a>Modules are a method of organizing <span class="in">`function`</span> or <span class="in">`struct`</span> definitions. Likewise, modules can extend themselves with other modeuls as we see below with <span class="in">`Portal.Door`</span> extending the <span class="in">`Portal`</span> module: </span>
+<span id="cb13-86"><a href="#cb13-86"></a></span>
+<span id="cb13-89"><a href="#cb13-89"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-90"><a href="#cb13-90"></a><span class="in">defmodule Portal.Door do</span></span>
+<span id="cb13-91"><a href="#cb13-91"></a><span class="in">  use Agent # This is a namespace statement, "bringing some `Agent`-related functionality into the module."</span></span>
+<span id="cb13-92"><a href="#cb13-92"></a></span>
+<span id="cb13-93"><a href="#cb13-93"></a><span class="in">  # This creates the portal-door</span></span>
+<span id="cb13-94"><a href="#cb13-94"></a><span class="in">  def start_link(color) when is_atom(color) do # `when` is a guard statement, only executing when specified</span></span>
+<span id="cb13-95"><a href="#cb13-95"></a><span class="in">    Agent.start_link(fn -&gt; [] end, name: color) # https://hexdocs.pm/elixir/1.16.0/Agent.html#start_link/2</span></span>
+<span id="cb13-96"><a href="#cb13-96"></a><span class="in">  end</span></span>
+<span id="cb13-97"><a href="#cb13-97"></a></span>
+<span id="cb13-98"><a href="#cb13-98"></a><span class="in">  def get(door) do # This gets the portal-door, returning its contents</span></span>
+<span id="cb13-99"><a href="#cb13-99"></a><span class="in">    Agent.get(door, fn list -&gt; list end)</span></span>
+<span id="cb13-100"><a href="#cb13-100"></a><span class="in">  end</span></span>
+<span id="cb13-101"><a href="#cb13-101"></a></span>
+<span id="cb13-102"><a href="#cb13-102"></a><span class="in">  def push(door, value) do # This updates the portal door to include the portal's list</span></span>
+<span id="cb13-103"><a href="#cb13-103"></a><span class="in">    Agent.update(door, fn list -&gt; [value | list] end)</span></span>
+<span id="cb13-104"><a href="#cb13-104"></a><span class="in">  end</span></span>
+<span id="cb13-105"><a href="#cb13-105"></a></span>
+<span id="cb13-106"><a href="#cb13-106"></a><span class="in">  def pop(door) do # Given some door with its list, add a tuple to the list?</span></span>
+<span id="cb13-107"><a href="#cb13-107"></a><span class="in">    Agent.get_and_update(door, fn list -&gt;</span></span>
+<span id="cb13-108"><a href="#cb13-108"></a><span class="in">      case list do</span></span>
+<span id="cb13-109"><a href="#cb13-109"></a><span class="in">        # The normal case - when the list has a head &amp; tail, return two tuples</span></span>
+<span id="cb13-110"><a href="#cb13-110"></a><span class="in">        [h | t] -&gt; {{:ok, h}, t} # but then removes the head?</span></span>
+<span id="cb13-111"><a href="#cb13-111"></a></span>
+<span id="cb13-112"><a href="#cb13-112"></a><span class="in">        # Error case, return a tuple with `:error` and an empty list</span></span>
+<span id="cb13-113"><a href="#cb13-113"></a><span class="in">        [] -&gt; {:error, []}</span></span>
+<span id="cb13-114"><a href="#cb13-114"></a><span class="in">      end</span></span>
+<span id="cb13-115"><a href="#cb13-115"></a><span class="in">    end)</span></span>
+<span id="cb13-116"><a href="#cb13-116"></a><span class="in">  end</span></span>
+<span id="cb13-117"><a href="#cb13-117"></a></span>
+<span id="cb13-118"><a href="#cb13-118"></a><span class="in">  def stop(door) do </span></span>
+<span id="cb13-119"><a href="#cb13-119"></a><span class="in">    Agent.stop(door) # I'm assuming this stops the `door` process, effectively killing the portal</span></span>
+<span id="cb13-120"><a href="#cb13-120"></a><span class="in">  end</span></span>
+<span id="cb13-121"><a href="#cb13-121"></a><span class="in">end</span></span>
+<span id="cb13-122"><a href="#cb13-122"></a><span class="in">```</span></span>
+<span id="cb13-123"><a href="#cb13-123"></a></span>
+<span id="cb13-124"><a href="#cb13-124"></a>And then <span class="in">`Portal`</span></span>
+<span id="cb13-125"><a href="#cb13-125"></a></span>
+<span id="cb13-128"><a href="#cb13-128"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-129"><a href="#cb13-129"></a><span class="in">defmodule Portal do</span></span>
+<span id="cb13-130"><a href="#cb13-130"></a><span class="in">  defstruct [:left, :right]</span></span>
+<span id="cb13-131"><a href="#cb13-131"></a></span>
+<span id="cb13-132"><a href="#cb13-132"></a><span class="in">  def shoot(color) do # `Potal` invokes `Portal.Door` without requiring a `use` statement?</span></span>
+<span id="cb13-133"><a href="#cb13-133"></a><span class="in">    Portal.Door.start_link(color)</span></span>
+<span id="cb13-134"><a href="#cb13-134"></a><span class="in">  end</span></span>
+<span id="cb13-135"><a href="#cb13-135"></a></span>
+<span id="cb13-136"><a href="#cb13-136"></a><span class="in">  def transfer(left_door, right_door, data) do</span></span>
+<span id="cb13-137"><a href="#cb13-137"></a><span class="in">    # First add all data to the portal on the left</span></span>
+<span id="cb13-138"><a href="#cb13-138"></a><span class="in">    for item &lt;- data do # wait, so Elixir does have for loops?</span></span>
+<span id="cb13-139"><a href="#cb13-139"></a><span class="in">      Portal.Door.push(left_door, item)</span></span>
+<span id="cb13-140"><a href="#cb13-140"></a><span class="in">    end</span></span>
+<span id="cb13-141"><a href="#cb13-141"></a></span>
+<span id="cb13-142"><a href="#cb13-142"></a><span class="in">    # Returns a portal struct with the doors</span></span>
+<span id="cb13-143"><a href="#cb13-143"></a><span class="in">    %Portal{left: left_door, right: right_door}</span></span>
+<span id="cb13-144"><a href="#cb13-144"></a><span class="in">  end</span></span>
+<span id="cb13-145"><a href="#cb13-145"></a></span>
+<span id="cb13-146"><a href="#cb13-146"></a><span class="in">  def push_right(portal) do</span></span>
+<span id="cb13-147"><a href="#cb13-147"></a><span class="in">    # See if we can pop data from left. If so, push the</span></span>
+<span id="cb13-148"><a href="#cb13-148"></a><span class="in">    # popped data to the right. Otherwise, do nothing.</span></span>
+<span id="cb13-149"><a href="#cb13-149"></a><span class="in">    case Portal.Door.pop(portal.left) do</span></span>
+<span id="cb13-150"><a href="#cb13-150"></a><span class="in">      :error   -&gt; :ok</span></span>
+<span id="cb13-151"><a href="#cb13-151"></a><span class="in">      {:ok, h} -&gt; Portal.Door.push(portal.right, h)</span></span>
+<span id="cb13-152"><a href="#cb13-152"></a><span class="in">    end</span></span>
+<span id="cb13-153"><a href="#cb13-153"></a></span>
+<span id="cb13-154"><a href="#cb13-154"></a><span class="in">    # Let's return the portal itself</span></span>
+<span id="cb13-155"><a href="#cb13-155"></a><span class="in">    portal</span></span>
+<span id="cb13-156"><a href="#cb13-156"></a><span class="in">  end</span></span>
+<span id="cb13-157"><a href="#cb13-157"></a></span>
+<span id="cb13-158"><a href="#cb13-158"></a><span class="in">  def close(portal) do # so each `Portal.Door` is an `Agent` which is killed with the `.stop` function. </span></span>
+<span id="cb13-159"><a href="#cb13-159"></a><span class="in">    Portal.Door.stop(portal.left) # and each `Portal.Door` requires its own `.stop`, because they're separate</span></span>
+<span id="cb13-160"><a href="#cb13-160"></a><span class="in">    Portal.Door.stop(portal.right)</span></span>
+<span id="cb13-161"><a href="#cb13-161"></a><span class="in">    :ok</span></span>
+<span id="cb13-162"><a href="#cb13-162"></a><span class="in">  end</span></span>
+<span id="cb13-163"><a href="#cb13-163"></a><span class="in">end</span></span>
+<span id="cb13-164"><a href="#cb13-164"></a></span>
+<span id="cb13-165"><a href="#cb13-165"></a><span class="in">```</span></span>
+<span id="cb13-166"><a href="#cb13-166"></a></span>
+<span id="cb13-167"><a href="#cb13-167"></a><span class="fu">### Some notes about the `Agent` module:</span></span>
+<span id="cb13-168"><a href="#cb13-168"></a><span class="ss">- </span>an <span class="in">`Agent`</span> is just another type of process in Elixir. Likewise, they can be <span class="in">`[spawn_link](https://hexdocs.pm/elixir/1.16.0/Kernel.html#spawn_link/1)`</span>ed together,  </span>
+<span id="cb13-169"><a href="#cb13-169"></a></span>
+<span id="cb13-170"><a href="#cb13-170"></a><span class="ss">- </span>Starting the same <span class="in">`Agent`</span> twice will return an <span class="in">`{:error, {:already_started, #PID&lt;0.205.0}}`</span>. This tells me that Elixir is intelligent about 1: comprehending what process you're referring to, and 2: ensuring processes can't be overwritten.</span>
+<span id="cb13-171"><a href="#cb13-171"></a></span>
+<span id="cb13-172"><a href="#cb13-172"></a><span class="fu">## Structs</span></span>
+<span id="cb13-173"><a href="#cb13-173"></a></span>
+<span id="cb13-176"><a href="#cb13-176"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-177"><a href="#cb13-177"></a><span class="in">defmodule User do # Defines a module, nothing we haven't seen before</span></span>
+<span id="cb13-178"><a href="#cb13-178"></a><span class="in">  defstruct [:name, :age] # This defines the data which a `User` can contain?</span></span>
+<span id="cb13-179"><a href="#cb13-179"></a><span class="in">end</span></span>
+<span id="cb13-180"><a href="#cb13-180"></a><span class="in">```</span></span>
+<span id="cb13-181"><a href="#cb13-181"></a></span>
+<span id="cb13-182"><a href="#cb13-182"></a>However, when referring to module-<span class="in">`struct`</span>s like the one above, the syntax is specific:</span>
+<span id="cb13-183"><a href="#cb13-183"></a></span>
+<span id="cb13-186"><a href="#cb13-186"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-187"><a href="#cb13-187"></a><span class="in">user = %User{name: "john doe", age: 27}</span></span>
+<span id="cb13-188"><a href="#cb13-188"></a></span>
+<span id="cb13-189"><a href="#cb13-189"></a><span class="in"># Fields can be accessed with dot-notation</span></span>
+<span id="cb13-190"><a href="#cb13-190"></a><span class="in">user.name # returns: "john does"</span></span>
+<span id="cb13-191"><a href="#cb13-191"></a></span>
+<span id="cb13-192"><a href="#cb13-192"></a><span class="in"># Pattern matching example:</span></span>
+<span id="cb13-193"><a href="#cb13-193"></a><span class="in">%User{age: age} = user</span></span>
+<span id="cb13-194"><a href="#cb13-194"></a><span class="in">age # returns: 27</span></span>
+<span id="cb13-195"><a href="#cb13-195"></a><span class="in">```</span></span>
+<span id="cb13-196"><a href="#cb13-196"></a></span>
+<span id="cb13-197"><a href="#cb13-197"></a><span class="fu">## Protocols - extending datatypes with `defimpl`</span></span>
+<span id="cb13-198"><a href="#cb13-198"></a></span>
+<span id="cb13-199"><a href="#cb13-199"></a>Protocols allow us to define ways for other code to make use of our own code. In this case, we're teaching the <span class="in">`inspect`</span> function, which is part of the Elixir kernel, how to print a representation of our <span class="in">`Portal`</span> struct within the CLI. In this case, we're just trying to make the module more user friendly.  </span>
+<span id="cb13-200"><a href="#cb13-200"></a></span>
+<span id="cb13-203"><a href="#cb13-203"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-204"><a href="#cb13-204"></a><span class="in">defimpl Inspect, for: Portal do</span></span>
+<span id="cb13-205"><a href="#cb13-205"></a><span class="in">  def inspect(%Portal{left: left, right: right}, _) do</span></span>
+<span id="cb13-206"><a href="#cb13-206"></a><span class="in">    left_door  = inspect(left)</span></span>
+<span id="cb13-207"><a href="#cb13-207"></a><span class="in">    right_door = inspect(right)</span></span>
+<span id="cb13-208"><a href="#cb13-208"></a></span>
+<span id="cb13-209"><a href="#cb13-209"></a><span class="in">    left_data  = inspect(Enum.reverse(Portal.Door.get(left)))</span></span>
+<span id="cb13-210"><a href="#cb13-210"></a><span class="in">    right_data = inspect(Portal.Door.get(right))</span></span>
+<span id="cb13-211"><a href="#cb13-211"></a></span>
+<span id="cb13-212"><a href="#cb13-212"></a><span class="in">    max = max(String.length(left_door), String.length(left_data))</span></span>
+<span id="cb13-213"><a href="#cb13-213"></a></span>
+<span id="cb13-214"><a href="#cb13-214"></a><span class="in">    """</span></span>
+<span id="cb13-215"><a href="#cb13-215"></a><span class="in">    #Portal&lt;</span></span>
+<span id="cb13-216"><a href="#cb13-216"></a><span class="in">      #{String.pad_leading(left_door, max)} &lt;=&gt; #{right_door}</span></span>
+<span id="cb13-217"><a href="#cb13-217"></a><span class="in">      #{String.pad_leading(left_data, max)} &lt;=&gt; #{right_data}</span></span>
+<span id="cb13-218"><a href="#cb13-218"></a><span class="in">    &gt;\</span></span>
+<span id="cb13-219"><a href="#cb13-219"></a><span class="in">    """</span></span>
+<span id="cb13-220"><a href="#cb13-220"></a><span class="in">  end</span></span>
+<span id="cb13-221"><a href="#cb13-221"></a><span class="in">end</span></span>
+<span id="cb13-222"><a href="#cb13-222"></a></span>
+<span id="cb13-223"><a href="#cb13-223"></a><span class="in"># And what we get as a result:</span></span>
+<span id="cb13-224"><a href="#cb13-224"></a><span class="in"># Portal&lt;</span></span>
+<span id="cb13-225"><a href="#cb13-225"></a><span class="in">#        :red &lt;=&gt; :purple</span></span>
+<span id="cb13-226"><a href="#cb13-226"></a><span class="in">#   [1, 2, 3] &lt;=&gt; []</span></span>
+<span id="cb13-227"><a href="#cb13-227"></a><span class="in"># &gt;</span></span>
+<span id="cb13-228"><a href="#cb13-228"></a></span>
+<span id="cb13-229"><a href="#cb13-229"></a><span class="in">```</span></span>
+<span id="cb13-230"><a href="#cb13-230"></a></span>
+<span id="cb13-231"><a href="#cb13-231"></a><span class="fu">## Elixir `Node`s</span></span>
+<span id="cb13-232"><a href="#cb13-232"></a></span>
+<span id="cb13-233"><a href="#cb13-233"></a>A <span class="in">`node`</span> is a container for processes within a different server. One connects to <span class="in">`node`</span>s as follows:</span>
+<span id="cb13-234"><a href="#cb13-234"></a></span>
+<span id="cb13-237"><a href="#cb13-237"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-238"><a href="#cb13-238"></a><span class="in">IO.inspect node()</span></span>
+<span id="cb13-239"><a href="#cb13-239"></a><span class="in">IO.inspect Node.get_cookie()</span></span>
+<span id="cb13-240"><a href="#cb13-240"></a><span class="in">:ok</span></span>
+<span id="cb13-241"><a href="#cb13-241"></a></span>
+<span id="cb13-242"><a href="#cb13-242"></a><span class="in">other_node = :"jsmq4atl-livebook_server@6aebae17b1d7" # this is the name of the other node</span></span>
+<span id="cb13-243"><a href="#cb13-243"></a><span class="in">other_cookie = :qHQdK1mN33nxFKM7YAZVBqO8NX4TXhS6 # this is a security-key, I don't understand how it works</span></span>
+<span id="cb13-244"><a href="#cb13-244"></a></span>
+<span id="cb13-245"><a href="#cb13-245"></a><span class="in">Node.set_cookie(other_node, other_cookie)</span></span>
+<span id="cb13-246"><a href="#cb13-246"></a><span class="in">Node.connect(other_node)</span></span>
+<span id="cb13-247"><a href="#cb13-247"></a></span>
+<span id="cb13-248"><a href="#cb13-248"></a><span class="in"># `other_node` is now the varaible which accesses the connection</span></span>
+<span id="cb13-249"><a href="#cb13-249"></a><span class="in">```</span></span>
+<span id="cb13-250"><a href="#cb13-250"></a></span>
+<span id="cb13-251"><a href="#cb13-251"></a>This is interesting because we're now able to transfer and transform data across nodes.</span>
+<span id="cb13-252"><a href="#cb13-252"></a></span>
+<span id="cb13-255"><a href="#cb13-255"></a><span class="in">```{elixir}</span></span>
+<span id="cb13-256"><a href="#cb13-256"></a><span class="in"># &gt; So far, we have been using atoms to represent doors, such as :blue, but we can also use the {name, node} notation to refer to a process in another node. Let's give it a try:</span></span>
+<span id="cb13-257"><a href="#cb13-257"></a></span>
+<span id="cb13-258"><a href="#cb13-258"></a><span class="in">blue = {:blue, other_node}</span></span>
+<span id="cb13-259"><a href="#cb13-259"></a><span class="in">Portal.Door.get(blue)</span></span>
+<span id="cb13-260"><a href="#cb13-260"></a></span>
+<span id="cb13-261"><a href="#cb13-261"></a><span class="in">Portal.shoot(:yellow)</span></span>
+<span id="cb13-262"><a href="#cb13-262"></a><span class="in">yellow = {:yellow, node()}</span></span>
+<span id="cb13-263"><a href="#cb13-263"></a><span class="in">portal = Portal.transfer(yellow, blue, [1, 2, 3, 4])</span></span>
+<span id="cb13-264"><a href="#cb13-264"></a></span>
+<span id="cb13-265"><a href="#cb13-265"></a><span class="in"># #Portal&lt;</span></span>
+<span id="cb13-266"><a href="#cb13-266"></a><span class="in">#  {:yellow, :"nv5thk4p-livebook_server@6aebae17b1d7"} &lt;=&gt; {:blue, :"jsmq4atl-livebook_server@6aebae17b1d7"}</span></span>
+<span id="cb13-267"><a href="#cb13-267"></a><span class="in">#                                         [1, 2, 3, 4] &lt;=&gt; []</span></span>
+<span id="cb13-268"><a href="#cb13-268"></a><span class="in"># &gt;</span></span>
+<span id="cb13-269"><a href="#cb13-269"></a><span class="in">```</span></span>
+<span id="cb13-270"><a href="#cb13-270"></a></span>
+<span id="cb13-271"><a href="#cb13-271"></a>So, you can pass a <span class="in">`node`</span> within a tuple as a function argument   </span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+</body></html>
