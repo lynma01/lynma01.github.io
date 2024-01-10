@@ -1,0 +1,22 @@
+---
+title: "Synthesizing Cohesive Data"
+filters:
+   - nutshell
+
+draft: true
+date: "2024-01-10"
+---
+
+# Why do this?
+I want synthetic data that makes sense, more importantly, we want synthetic data which is more than randomized variables. We want discernable patterns within the data which create a coherent narrative across the different tables.
+
+# How do we do it?
+The first thing is to have a narrative in mind from which we can set expectations as to what's "coherent" or not. In this case, we want some interesting "events" to happen - which would then trace their way throughout the dataset.
+
+But how do we define "events"? The term is too vague to give us a proper idea of what we're trying to accomplish. When I say, "events", what I mean is creating a dataset from which it's easy to interrelate cold/sterile data as rows of factoids - to the very real human drama's to which that data is trying to describe.
+
+To give an example using a dataset of a book-store, there's a few different "events" we're looking to describe:
+1. 
+
+Unlike most synthetic data, we want at least a semi-clear understanding of cause -> effect within the set. With enough cohesion to the data (AKA there's a number of evident patterns across different entities), we create narrative meaning from the patterns.
+

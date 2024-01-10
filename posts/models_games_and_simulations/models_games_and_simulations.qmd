@@ -18,3 +18,5 @@ Fun and play are vital to all of us, but the nature of how we socially-signal ou
 
 # Strategy, Systems, and the evolutionary struggle to see the "big picture"
 Another Nicky Chase learning-device for illustrating system dynamics called [loopy](https://ncase.me/loopy/) 
+
+
