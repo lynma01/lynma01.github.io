@@ -68,7 +68,6 @@ class Widget:
     @classmethod
     def from_df(cls, df: pl.DataFrame):
         return cls(widget_data = df)
-
 ```
 
 ```{python}
