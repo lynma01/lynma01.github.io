@@ -12,13 +12,89 @@ draft: true
 Which is the stronger organization? The one which shares the same PowerPoint 1,000 times? Or the one which shares its code only once?
 
 ### What's the Problem?
-Most businesses, or organizations have an enormous supply of PowerPoints, Word Documents, and/or Training materials. Those materials are ephemeral ideas because they were created by managers trying to envision for its employees how the world _should be_ based on their previous experience about what the customers problems are. 
+Most businesses, or organizations have an enormous supply of PowerPoints, documents, and/or training materials. Those materials are ephemeral because they were created by managers trying to envision how the world _should be_ using their previous experience. 
 
 The problem, for any member of the organization reading or listenting to all of these ideas, is deciding what to trust; which of these many PowerPoints, documents, or managers' experience  *actually* reflects the reality of what they have to deal with? 
 
 When rubber hits the road, no one wants to have wasted their time trying to learn a set of processes or procedures which in no way reflect the problems they'll face. If anything, its because of many peoples' continuous experience of having their trust broken by such materials which don't reflect reality that I believe there's so much cynacism in the workplace today. 
 
 ### What does this mean for normal people?
+Without any reflections of empiricism, managerial authority rests on a flaccid arguement: These materials and experiences are true because they said so. This circular reasoning breeds cynicism; employees are told to have trust in something which is inherently untrustworthy. Likewise, the standard is unfair for managers because their trustworthiness is being judged on criteria outside of their control.
+
+There are no silver-bullets in resolving this impasse, but there are some steps which can drive asymetrically high organizational-value at relatively low personal cost: defining the business and it's processes in code. 
+
+A quick example: imagine for a moment that we are a widget company. We produce and then sell widgets, however, our input and output costs can be highly variable. Very simply using Python:
+
+```{python}
+import prefect as pf
+import polars as pl
+from datetime import datetime as dt
+from faker import Faker
+import attrs
+
+import numpy as np
+rng = np.random.default_rng(12345)
+```
+
+```{python}
+wdf = pl.DataFrame(
+      {
+        "name": ["Axiomatic-Postulator", "Mephistolinator", "Thrumbobulator", "Calcultroplator", "Prefectulationary-Servo"] 
+        , "price": [10000.00, 7500.00, 5500.00, 3000.00, 1500.00]
+        , "dist": [0.45, 0.25, 0.15, 0.10, 0.05]
+    }
+)
+```
+
+```{python}
+@attrs.define
+class Widget:
+    widget_data: pl.DataFrame = attrs.field()
+    name: str = attrs.field(init=False)
+    price: float = attrs.field(init=False)
+
+    @name.default
+    def _get_name(self):
+        return np.random.choice(
+            a=list(self.widget_data.get_column("name"))
+            , p=list(self.widget_data.get_column("dist"))
+        )
+
+    @price.default
+    def _get_price(self):
+        return self.widget_data.filter(
+            pl.col("name") == self.name).get_column("price")[0]
+
+    @classmethod
+    def from_df(cls, df: pl.DataFrame):
+        return cls(widget_data = df)
+
+```
+
+```{python}
+
+widget_list = []
+company_ts = {
+    "ts": []
+    "obj": []
+    "transaction": []
+}
+
+@pf.task()
+def add_widget(widget_list: list) -> list:
+    return widget_list.append(Widget.from_df(widget_data)) 
+
+@pf.task(retries=2)
+def sell_widget() -> dict:
+    
+    
+
+@pf.flow(log_prints=True)
+def widget_flow():
+    pass
+
+
+```
 
 
 ## Other
