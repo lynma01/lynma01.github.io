@@ -86,9 +86,8 @@ def add_widget(widget_list: list) -> list:
 
 @pf.task(retries=2)
 def sell_widget() -> dict:
-   wd = widget_list[0]
-   wd 
-    
+    wd = widget_list[0] 
+    return wd
 
 @pf.flow(log_prints=True)
 def widget_flow():
