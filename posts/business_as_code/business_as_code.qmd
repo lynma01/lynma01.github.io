@@ -1,9 +1,6 @@
 ---
 title: "Business-as-Code"
 date: "2024-01-27"
-filters:
-   - nutshell
-
 draft: true
 ---
 # Business-as-Code
@@ -12,7 +9,7 @@ draft: true
 Which is the stronger organization? The one which shares the same PowerPoint 1,000 times? Or the one which shares its code only once?
 
 ### What's the Problem?
-Most businesses, or organizations have an enormous supply of PowerPoints, documents, and/or training materials. Those materials are ephemeral because they were created by managers trying to envision how the world _should be_ using their previous experience. 
+Most businesses, or organizations have an enormous supply of PowerPoints, documents, and/or training materials. Those materials are ephemeral because they were created by managers trying to envision how the world _should be_.
 
 The problem, for any member of the organization reading or listenting to all of these ideas, is deciding what to trust; which of these many PowerPoints, documents, or managers' experience  *actually* reflects the reality of what they have to deal with? 
 
@@ -26,7 +23,6 @@ There are no silver-bullets in resolving this impasse, but there are some steps 
 A quick example: imagine for a moment that we are a widget company. We produce and then sell widgets, however, our input and output costs can be highly variable. Very simply using Python:
 
 ```{python}
-import prefect as pf
 import polars as pl
 from datetime import datetime as dt
 from faker import Faker
@@ -75,20 +71,17 @@ class Widget:
 widget_list = []
 company_ts = {
     "ts": []
-    "obj": []
-    "transaction": []
+    , "obj": []
+    , "transaction": []
 }
 
-@pf.task()
 def add_widget(widget_list: list) -> list:
     return widget_list.append(Widget.from_df(widget_data)) 
 
-@pf.task(retries=2)
 def sell_widget() -> dict:
     wd = widget_list[0] 
     return wd
 
-@pf.flow(log_prints=True)
 def widget_flow():
     pass
 

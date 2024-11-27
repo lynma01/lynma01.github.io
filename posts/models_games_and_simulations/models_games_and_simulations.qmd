@@ -1,8 +1,5 @@
 ---
 title: "Models, Games, and Simulations"
-filters:
-   - nutshell
-
 draft: true
 ---
 

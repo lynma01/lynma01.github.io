@@ -1,0 +1,24 @@
+---
+title: "About Me"
+date: "2024-11-12"
+draft: true
+---
+
+# Hello!
+
+## Introductions
+
+My name is Matthew Lyn, and I'm writing this blog while in grad school studying biotechnology. I come from a business/IT background, and decided to transition into the biotech industry after a few years in disaster risk mitigation, emergency management, and health-tech.
+
+In 2021, I was working as a data analyst for the California Dept. of Public Health during the COVID-19 pandemic when I kept seeing resources being routed to something called "MAB clinic". I'd never heard of monoclonal anti-body therapy before, and the interest sat in the back of my brain for two years before I became serious about pursuing the science underlying healthcare.
+
+## Education
+
+I'm currently a graduate student in [Georgetown University's Biotechnology Masters program](https://biotechnology.georgetown.edu) concentrating in Industrial Sciences. As far as I'm aware, I'm the last student to follow the Industrial Science track, and the program removed the description from the website. Long story short, my degree-track focused on Protein Purification and Tissue engineering- alongside classes in "Good Manufacturing Practice". 
+
+While an intended career path was never attached to the track, I interpreted it to focus on the "operations" side of biotechnology; bringing other students research in cell and gene therapies from bench-top scale to industrial/commercial scale without sacrificing quality or efficiency.
+
+# References
+
+[^kt]: “How KEYTRUDA® (Pembrolizumab) Works.” n.d. Accessed November 12, 2024. https://www.keytruda.com/how-does-keytruda-work/.
+[^wg]: 

@@ -34,7 +34,6 @@ Depending on how it's implemented, re-using previous content is either a useful 
 ---
 title: "My Document"
 ---
-{{< include _data.qmd >}}
 
 # Use the data...
 ```

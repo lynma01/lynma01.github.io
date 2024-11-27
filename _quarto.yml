@@ -13,14 +13,10 @@ website:
     left:
       - href: posts/home.qmd
         text: Home
-  twitter-card: true
   open-graph:
     locale: es_ES
     site-name: "lynma01.github.io"
     image: "home_images/acrdb.svg"
-
-execute: 
-  cache: true
 
 format:
   html:
@@ -44,5 +40,3 @@ format:
     # for Mermaid digrams and other extensions
     mermaid:
       theme: forest
-    filters:
-      - nutshell

@@ -1,9 +1,6 @@
 ---
 title: "When you've learn programming on Excel/SQL and it shows"
 date: "2023-12-29"
-filters:
-   - nutshell
-
 draft: true
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: "Shilling for Elixir"
 date: "2024-01-07"
-filters:
-   - nutshell
-
 draft: true
 ---
 
