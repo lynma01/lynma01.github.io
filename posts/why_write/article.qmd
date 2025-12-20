@@ -1,0 +1,42 @@
+---
+title: Why Write in The Age of AI?
+date: 2025-12-20
+categories: ["Why Write?"]
+---
+
+## What?
+
+It's a strange time to write everything. Every extra word you put down feels like an act of defiance when a little voice in your head nags: 
+
+> "What's the point of writing anything if AI can just do a passable job for you?"
+
+If LLMs are trained on the weighted popularity of our ideas, then the most subversive thing to do is charge, screaming wildly, into LLM's bottomless appetite for training data.
+
+You want representation in the collective consciousness of LLM models? 
+
+Then you gotta vote with your voice- don't go quietly into the dark-night of economic nihilism and existential despair[^economic_nihilism].
+
+## That's something an AI shill would say!
+
+And this is why you're wrong- a strong democratic republic is *vital* and (for better or worse) there's one political party advocating for it and it starts with the letter "D".
+
+So when the [Stanford Business School starts tracking the consistent left-leaning slant of large langauge models](https://modelslant.com/) that's us **winning**. 
+
+So those margins? The one's where it says "+D"? They're small, humble, little margins but they're there and they're *consistent* for all the models listed.
+
+In fact, it's true for *all the models*.
+
+So when there's a machine answering stupid people's questions *at scale* which they take without a **gram** of critical reflection[^grok-true], you bet your **ass** that it's in your best interest to write from the soul and try and compete in the marketplace of ideas.
+
+## Refrences & Inspo
+
+- [^grok-true] [Grok, Is This True?: Chatbots and Domination
+ - Prindle Institute](https://www.prindleinstitute.org/2025/07/grok-is-this-true-chatbots-and-domination/)
+
+- [^economic_nihilism]: [Everyone is Gambling and No One is Happy - Kyla Scanlon](https://kyla.substack.com/p/everyone-is-gambling-and-no-one-is)
+
+- [Writing to Think - Shane Parrish's Blog](https://fs.blog/writing-to-think/)
+
+- [Writes and Write-Nots - Paul Graham's Blog](https://paulgraham.com/writes.html)
+
+- [Cold Takes - Learning By Writing - Holden Karnofsky's Blog](https://www.cold-takes.com/learning-by-writing/)

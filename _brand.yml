@@ -1,0 +1,30 @@
+meta:
+  name: brand.yml
+
+logo:
+  small: branding/logo.png
+  medium: branding/logo.png
+  large: branding/banner.jpeg
+
+typography:
+  fonts:
+    - family: Open Sans
+      source: google
+    - family: IBM Plext Mono
+      source: google
+    - family: Atkinson
+      source: file
+      files:
+        - path: style/fonts/atkinson_next/AtkinsonHyperlegibleNext-REgular.ttf
+        - path: style/fonts/atkinson_next/AtkinsonHyperlegibleNext-ExtraLightItalic.ttf
+          style: italic
+        - path: style/fonts/atkinson_next/AtkinsonHyperlegibleNext-Bold.ttf
+          style: oblique
+  
+  base: 
+    family: Atkinson
+    size: 1.15rem
+  headings:
+    family: Atkinson
+    weight: 600
+  monospace: IBM Plex Mono

@@ -1,5 +1,5 @@
 ---
-title: "Getting a Little Better Everyday"
+title: "Another Recovering Perfectionist"
 listing:
   contents: "posts/*.qmd" 
   sort: "date desc"

@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "posts/home.html",
+    "href": "posts/home.html",
+    "title": "Infinite Zest",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "fermenting/business_as_code/bac_2.html",
+    "href": "fermenting/business_as_code/bac_2.html",
+    "title": "Business-as-Code",
+    "section": "",
+    "text": "1 Summary\nWe’re beginning to come to grips with how Large Language Models (LLMs) will impact the labor market. What does it mean to be a knowledge-worker when there exists a omni-present, intelligent, efficient robotic knowledge-worker which costs $20 per month?\nThe primary limitations seem to be:\n\nThe managerial capacity required to safely and reliably oversee the content which an LLM produces.\nWhat is the price for which a customer is willing to pay for LLM generated content in the market in which an LLM is deployed?\n\nProblem #1 is an engineering problem, most efficiently solved by the creators of the LLMs released for our use. While there is an immense creativity required to design a solution which fulfills the safety, efficiency, and resource requirements of any profitable organization- for me to write about engineering solutions would be the wrong side of comical.\nProblem #2, on the other hand, I can write something semi-interesting about."
+  }
+]

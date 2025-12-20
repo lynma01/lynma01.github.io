@@ -1,0 +1,13 @@
+---
+title: The Executive Prediction Market
+date: 2025-12-20
+draft: true
+---
+
+## What?
+
+90% of the executive's job is setting reasonable expectations.
+
+Dashboards without targets are pure noise, and they lack any accountability: how can we get to "better" if we don't know what's good or bad? That's why dashboards can be another source of noise- another expensive IT project that produces little value beyond bean-counting.
+
+The discomfort that we feel in putting our names and reputations on guesses about the future is the most important, risky work we can do. When it comes to strategy work, it's the simplest and most concrete action we can do. Some people call that vision, I call it trying to hit a moving target.

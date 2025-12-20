@@ -2,4 +2,5 @@
 .venv
 .vscode
 _extensions/
-
+lynma01.github.io_files
+**/*.quarto_ipynb

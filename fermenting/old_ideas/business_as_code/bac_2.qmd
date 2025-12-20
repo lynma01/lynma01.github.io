@@ -1,0 +1,21 @@
+---
+title: "Business-as-Code"
+date: "2024-11-27"
+draft: true
+---
+
+# Summary
+
+We're beginning to come to grips with how Large Language Models (LLMs) will impact the labor market. What does it mean to be a knowledge-worker when there exists a omni-present, intelligent, efficient robotic knowledge-worker which costs $20 per month?
+
+The primary limitations seem to be:
+
+1. The managerial capacity required to safely and reliably oversee the content which an LLM produces.
+
+2. What is the price for which a customer is willing to pay for LLM generated content in the market in which an LLM is deployed?
+
+Problem #1 is an engineering problem, most efficiently solved by the creators of the LLMs released for our use. While there is an immense creativity required to design a solution which fulfills the safety, efficiency, and resource requirements of any profitable organization- for me to write about engineering solutions would be the wrong side of comical.
+
+Problem #2, on the other hand, I can write something semi-interesting about.
+
+

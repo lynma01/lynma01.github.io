@@ -21,21 +21,22 @@ website:
 format:
   html:
     # html themes from bootswatch
+    brand: _brand.yml
+    csl: "style/cell.csl"
     theme:
-      light: litera
+      light: sandstone 
       dark:  cyborg
     # text formatting for table of contents, chapters, etc.
     toc: true
     number-sections: true    
     crossref:
       chapters: true
-      labels: roman
-      subref-labels: roman
-    # for dealing with source code
-    code-tools:
-      source: true
-      toggle: false
-      caption: none
+    code-fold: true
+    code-summary: "Code:"
+    linestretch: 1.20
+    body-font: "Atkinson Hyperlegible Next"
+    heading-font: "Atkinson Hyperlegible Next"
+
     code-line-numbers: true
     # for Mermaid digrams and other extensions
     mermaid:

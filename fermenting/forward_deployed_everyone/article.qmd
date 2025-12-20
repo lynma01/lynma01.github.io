@@ -1,0 +1,24 @@
+---
+title: The Forward Deployed ?
+date: 2025-12-20
+draft: true
+---
+
+## What?
+
+The future is directing towards "Forward Deployed" everything. This was coined by the Palantir in it's role, "Forward Deployed Engineer". Despite not having a software of their own for several years, sheer proximity to the problem allowed them to create exceptional value.
+
+I'm not the first one to notice[^most-expensive-wall], and I'm sure I won't be the last. 
+
+## Why is it such a powerful idea? 
+
+An FDE's ability to craft solutions is tied to their *implicit* understanding of the problem as much as their explicit understanding.
+
+## It's implication?
+
+- The marine's will perpetually write about their "tooth-to-tail" ratio
+- You can't outsource science or art, only its execution
+
+## References
+
+[^most-expensive-wall]: The Most Expensive Wall in Software - [Robert Greiner's blog](https://robertgreiner.com/the-most-expensive-wall-in-software/)
