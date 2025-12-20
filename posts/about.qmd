@@ -1,6 +1,5 @@
 ---
 title: "About Me"
-date: "2025-12-20"
 ---
 
 ## Another Recovering Perfectionist
