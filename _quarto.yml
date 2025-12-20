@@ -16,7 +16,6 @@ website:
   open-graph:
     locale: es_ES
     site-name: "lynma01.github.io"
-    image: "home_images/acrdb.svg"
 
 format:
   html:

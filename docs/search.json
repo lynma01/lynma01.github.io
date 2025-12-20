@@ -1,16 +1,72 @@
 [
   {
+    "objectID": "posts/writing_with_ai/article.html",
+    "href": "posts/writing_with_ai/article.html",
+    "title": "Writing for Others",
+    "section": "",
+    "text": "The best investment you can make is in yourself, but the only check you can cash comes from helping others.\nCrafting ideas into something helpful to others, or even just plain entertaining? That’s good for everyone.\nThe moment you compromise that premise by using AI with the intention of “fooling” others into thinking the post is somehow more valuable than it is?\nThe only person you’re fooling is yourself.\n\nAm I arguing against using AI for editing? No. \nIdea generation? No.\nPreliminary research? No.\n\nWhat I’m arguing against is the intention: you’re trying to make a buck off people’s inability to discern real from fake when talking about what you believe and why.\nYou’re no longer focused on adding value, you’re focused on the appearance of value.\nThe public-facing signal in this transgression is doubly negative. It says: “I’m a commodity with premium pricing, and I think YOU can’t tell the difference.”\nAll I can say is be careful of labelling people as luddites when they disagree with using AI. It says more about you than it does about them."
+  },
+  {
+    "objectID": "posts/writing_with_ai/article.html#with-writing-money-value",
+    "href": "posts/writing_with_ai/article.html#with-writing-money-value",
+    "title": "Writing for Others",
+    "section": "",
+    "text": "The best investment you can make is in yourself, but the only check you can cash comes from helping others.\nCrafting ideas into something helpful to others, or even just plain entertaining? That’s good for everyone.\nThe moment you compromise that premise by using AI with the intention of “fooling” others into thinking the post is somehow more valuable than it is?\nThe only person you’re fooling is yourself.\n\nAm I arguing against using AI for editing? No. \nIdea generation? No.\nPreliminary research? No.\n\nWhat I’m arguing against is the intention: you’re trying to make a buck off people’s inability to discern real from fake when talking about what you believe and why.\nYou’re no longer focused on adding value, you’re focused on the appearance of value.\nThe public-facing signal in this transgression is doubly negative. It says: “I’m a commodity with premium pricing, and I think YOU can’t tell the difference.”\nAll I can say is be careful of labelling people as luddites when they disagree with using AI. It says more about you than it does about them."
+  },
+  {
     "objectID": "posts/home.html",
     "href": "posts/home.html",
-    "title": "Infinite Zest",
+    "title": "Another Recovering Perfectionist",
     "section": "",
     "text": "No matching items"
   },
   {
-    "objectID": "fermenting/business_as_code/bac_2.html",
-    "href": "fermenting/business_as_code/bac_2.html",
-    "title": "Business-as-Code",
+    "objectID": "posts/about.html",
+    "href": "posts/about.html",
+    "title": "About Me",
     "section": "",
-    "text": "1 Summary\nWe’re beginning to come to grips with how Large Language Models (LLMs) will impact the labor market. What does it mean to be a knowledge-worker when there exists a omni-present, intelligent, efficient robotic knowledge-worker which costs $20 per month?\nThe primary limitations seem to be:\n\nThe managerial capacity required to safely and reliably oversee the content which an LLM produces.\nWhat is the price for which a customer is willing to pay for LLM generated content in the market in which an LLM is deployed?\n\nProblem #1 is an engineering problem, most efficiently solved by the creators of the LLMs released for our use. While there is an immense creativity required to design a solution which fulfills the safety, efficiency, and resource requirements of any profitable organization- for me to write about engineering solutions would be the wrong side of comical.\nProblem #2, on the other hand, I can write something semi-interesting about."
+    "text": "Hello! My name’s Matt, and welcome to my blog."
+  },
+  {
+    "objectID": "posts/about.html#another-recovering-perfectionist",
+    "href": "posts/about.html#another-recovering-perfectionist",
+    "title": "About Me",
+    "section": "",
+    "text": "Hello! My name’s Matt, and welcome to my blog."
+  },
+  {
+    "objectID": "posts/why_write/article.html",
+    "href": "posts/why_write/article.html",
+    "title": "Why Write in The Age of AI?",
+    "section": "",
+    "text": "It’s a strange time to write everything. Every extra word you put down feels like an act of defiance when a little voice in your head nags:\n\n“What’s the point of writing anything if AI can just do a passable job for you?”\n\nIf LLMs are trained on the weighted popularity of our ideas, then the most subversive thing to do is charge, screaming wildly, into LLM’s bottomless appetite for training data.\nYou want representation in the collective consciousness of LLM models?\nThen you gotta vote with your voice- don’t go quietly into the dark-night of economic nihilism and existential despair1."
+  },
+  {
+    "objectID": "posts/why_write/article.html#what",
+    "href": "posts/why_write/article.html#what",
+    "title": "Why Write in The Age of AI?",
+    "section": "",
+    "text": "It’s a strange time to write everything. Every extra word you put down feels like an act of defiance when a little voice in your head nags:\n\n“What’s the point of writing anything if AI can just do a passable job for you?”\n\nIf LLMs are trained on the weighted popularity of our ideas, then the most subversive thing to do is charge, screaming wildly, into LLM’s bottomless appetite for training data.\nYou want representation in the collective consciousness of LLM models?\nThen you gotta vote with your voice- don’t go quietly into the dark-night of economic nihilism and existential despair1."
+  },
+  {
+    "objectID": "posts/why_write/article.html#thats-something-an-ai-shill-would-say",
+    "href": "posts/why_write/article.html#thats-something-an-ai-shill-would-say",
+    "title": "Why Write in The Age of AI?",
+    "section": "0.2 That’s something an AI shill would say!",
+    "text": "0.2 That’s something an AI shill would say!\nAnd this is why you’re wrong- a strong democratic republic is vital and (for better or worse) there’s one political party advocating for it and it starts with the letter “D”.\nSo when the Stanford Business School starts tracking the consistent left-leaning slant of large langauge models that’s us winning.\nSo those margins? The one’s where it says “+D”? They’re small, humble, little margins but they’re there and they’re consistent for all the models listed.\nIn fact, it’s true for all the models.\nSo when there’s a machine answering stupid people’s questions at scale which they take without a gram of critical reflection[^grok-true], you bet your ass that it’s in your best interest to write from the soul and try and compete in the marketplace of ideas."
+  },
+  {
+    "objectID": "posts/why_write/article.html#refrences-inspo",
+    "href": "posts/why_write/article.html#refrences-inspo",
+    "title": "Why Write in The Age of AI?",
+    "section": "0.3 Refrences & Inspo",
+    "text": "0.3 Refrences & Inspo\n\n[^grok-true] [Grok, Is This True?: Chatbots and Domination\nPrindle Institute](https://www.prindleinstitute.org/2025/07/grok-is-this-true-chatbots-and-domination/)\n\nWriting to Think - Shane Parrish’s Blog\nWrites and Write-Nots - Paul Graham’s Blog\nCold Takes - Learning By Writing - Holden Karnofsky’s Blog"
+  },
+  {
+    "objectID": "posts/why_write/article.html#footnotes",
+    "href": "posts/why_write/article.html#footnotes",
+    "title": "Why Write in The Age of AI?",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nEveryone is Gambling and No One is Happy - Kyla Scanlon↩︎"
   }
 ]
