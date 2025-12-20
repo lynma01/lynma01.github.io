@@ -6,9 +6,11 @@ draft: true
 
 ## What?
 
-The future is directing towards "Forward Deployed" everything. This was coined by the Palantir in it's role, "Forward Deployed Engineer". Despite not having a software of their own for several years, sheer proximity to the problem allowed them to create exceptional value.
+The future is directing towards "Forward Deployed" everything. 
 
-I'm not the first one to notice[^most-expensive-wall], and I'm sure I won't be the last. 
+This was coined by the Palantir in it's role, "Forward Deployed Engineer". Despite not having a software of their own for several years, sheer proximity to the problem allowed them to create exceptional value.
+
+I'm not the first one to notice[^most-expensive-wall], and I'm sure I won't be the last.
 
 ## Why is it such a powerful idea? 
 

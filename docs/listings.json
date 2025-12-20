@@ -1,6 +1,10 @@
 [
   {
     "listing": "/posts/home.html",
-    "items": []
+    "items": [
+      "/posts/about.html",
+      "/posts/why_write.html",
+      "/posts/writing_with_ai.html"
+    ]
   }
 ]
