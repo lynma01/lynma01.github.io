@@ -1,1 +1,1 @@
-Sitemap: https://lynma01.github.io/home/sitemap.xml
+Sitemap: https://lynma01.github.io/posts/home.html/sitemap.xml

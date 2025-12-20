@@ -6,7 +6,7 @@ project:
 
 website:
   title: lynma01.github.io
-  site-url: https://lynma01.github.io/home
+  site-url: https://lynma01.github.io/posts/home.html
   repo-url: https://github.com/lynma01/lynma01.github.io
   search:
     location: navbar
