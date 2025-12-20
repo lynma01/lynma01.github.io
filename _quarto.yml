@@ -5,7 +5,9 @@ project:
     - "posts/*.qmd" 
 
 website:
-  title: "lynma01.github.io"
+  title: lynma01.github.io
+  site-url: https://lynma01.github.io/home
+  repo-url: https://github.com/lynma01/lynma01.github.io
   search:
     location: navbar
     type: textbox
@@ -15,7 +17,7 @@ website:
         text: Home
   open-graph:
     locale: es_ES
-    site-name: "lynma01.github.io"
+    site-name: lynma01.github.io
 
 format:
   html:
